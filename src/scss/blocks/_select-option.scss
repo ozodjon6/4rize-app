@@ -1,0 +1,53 @@
+.custom-select {
+    position: relative;
+    width: 200px;
+  }
+  
+  /* Стилизация элемента select (скрыт) */
+  #mySelect {
+    display: none;
+  }
+  
+  /* Стилизация элемента, заменяющего select */
+  .select-styled {
+    border: 1px solid var(--primary-borderline-colour);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Стилизация элемента select при наведении */
+//   .select-styled:hover {
+//     background-color: #f0f0f0;
+//   }
+  
+  /* Стилизация выпадающего списка */
+  .select-options {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    border: 1px solid var(--primary-borderline-colour);
+    border-top: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /* Стилизация элемента option в выпадающем списке */
+  .select-options li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .select-options li:not(:last-child) {
+    border-bottom: 1px solid var(--primary-borderline-colour);
+  }
+  
+  /* Стилизация элемента option при наведении */
+  .select-options li:hover {
+    background-color: #f0f0f0;
+  }

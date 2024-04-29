@@ -1,0 +1,145 @@
+/** @format */
+
+.mfp-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1043;
+  position: fixed;
+  outline: none !important;
+}
+
+.mfp-container {
+  position: fixed;
+  top: 40px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: calc(100vh - 80px);
+  overflow: hidden;
+
+  @include respond(mobilemini) {
+    top: 0;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+.mfp-bg {
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: var(--bg-dark-transparent-colour);
+}
+.mfp-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  z-index: 1045;
+  height: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+  width: 100%;
+  cursor: auto;
+}
+.mfp-ajax-cur {
+  cursor: progress;
+}
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out;
+}
+.mfp-zoom {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in;
+}
+.mfp-auto-cursor .mfp-content {
+  cursor: auto;
+}
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader,
+.mfp-counter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.mfp-loading.mfp-figure {
+  display: none;
+}
+.mfp-hide {
+  display: none !important;
+}
+.mfp-s-ready .mfp-preloader {
+  display: none;
+}
+.mfp-s-error .mfp-content {
+  display: none;
+}
+
+.mfp-close-btn-in .mfp-close {
+  position: absolute;
+  display: flex;
+  background-image: url(../assets/icons/close.svg);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 32px;
+  height: 32px;
+  right: 24px;
+  color: #242a38;
+  opacity: 1;
+  border: 1px solid #d3d6db;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 24px;
+  font-weight: 400;
+  font-size: 0;
+  transition: opacity 0.3s;
+  z-index: 100;
+
+  @include respond(tabdesk) {
+    top: 32px;
+    right: 32px;
+  }
+
+  @include respond(mobilemini) {
+    top: 16px;
+    right: 16px;
+  }
+
+  &:hover {
+    background-image: url(../assets/icons/close-hover.svg);
+  }
+}
+
+@media (min-width: 1366px) {
+  .mfp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .mfp-content {
+  //   max-width: 1920px;
+  // }
+
+  // .gallery-top {
+  //   max-width: 1200px;
+  // }
+}

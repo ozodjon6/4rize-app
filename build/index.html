@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web app | Home Page</title>
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <aside class="sidebar">
+          <div class="sidebar__inner">
+    <a href="#" class="sidebar__logo">
+        <svg class="icon" width="76" height="27">
+            <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+        </svg>
+    </a>
+
+    <div class="sidebar-menu">
+        <div class="sidebar-menu__item">
+            <div class="filter">
+                <strong class="filter__title text-default text-small">Процесс</strong>
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox" checked>
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Перевод денег</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Регистрация</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Оплата по QR</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Заказ карты</span>
+                        </label>
+                    </li>
+                    <div class="filter__more-item">
+                        <li class="filter__item">
+                            <label class="filter__checkbox-wrap">
+                                <input class="filter__input" type="checkbox">
+                                <span class="filter__mask"></span>
+                                <span class="filter__checkbox text-default text-x-small">Оплата по QR</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="filter__checkbox-wrap">
+                                <input class="filter__input" type="checkbox">
+                                <span class="filter__mask"></span>
+                                <span class="filter__checkbox text-default text-x-small">Заказ карты</span>
+                            </label>
+                        </li>
+                    </div>
+                    <li class="filter__more">
+                        <span class="text-default text-x-small">Еще</span>
+                        <svg class="icon" width="12" height="12">
+                            <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-menu__item">
+            <div class="filter">
+                <strong class="filter__title text-default text-small">Бренд</strong>
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Uzum</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Payme</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Click</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Anor Bank</span>
+                        </label>
+                    </li>
+                    <div class="filter__more-item">
+                        <li class="filter__item">
+                            <label class="filter__checkbox-wrap">
+                                <input class="filter__input" type="checkbox">
+                                <span class="filter__mask"></span>
+                                <span class="filter__checkbox text-default text-x-small">Ipak yo`li</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="filter__checkbox-wrap">
+                                <input class="filter__input" type="checkbox">
+                                <span class="filter__mask"></span>
+                                <span class="filter__checkbox text-default text-x-small">Humans</span>
+                            </label>
+                        </li>
+                    </div>
+                    <li class="filter__more">
+                        <span class="text-default text-x-small">Еще</span>
+                        <svg class="icon" width="12" height="12">
+                            <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-menu__item">
+            <div class="filter">
+                <strong class="filter__title text-default text-small">Устройство</strong>
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Android</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox" checked>
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Apple iOS</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">ПК</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-menu__item">
+            <div class="filter">
+                <strong class="filter__title text-default text-small">Страна</strong>
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox" checked>
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Узбекистан</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Россия</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Казахстан</span>
+                        </label>
+                    </li>
+                    <li class="filter__item">
+                        <label class="filter__checkbox-wrap">
+                            <input class="filter__input" type="checkbox">
+                            <span class="filter__mask"></span>
+                            <span class="filter__checkbox text-default text-x-small">Кыргызстан</span>
+                        </label>
+                    </li>
+                    <div class="filter__more-item">
+                        <li class="filter__item">
+                            <label class="filter__checkbox-wrap">
+                                <input class="filter__input" type="checkbox">
+                                <span class="filter__mask"></span>
+                                <span class="filter__checkbox text-default text-x-small">Беларус</span>
+                            </label>
+                        </li>
+                        <li class="filter__item">
+                            <label class="filter__checkbox-wrap">
+                                <input class="filter__input" type="checkbox">
+                                <span class="filter__mask"></span>
+                                <span class="filter__checkbox text-default text-x-small">Таджикистан</span>
+                            </label>
+                        </li>
+                    </div>
+                    <li class="filter__more">
+                        <span class="text-default text-x-small">Еще</span>
+                        <svg class="icon" width="12" height="12">
+                            <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sidebar__close">
+    <svg class="icon" width="12" height="12">
+        <use xlink:href="./assets/icons/sprite.svg#close"></use>
+    </svg>
+</div>
+        </aside>
+        <div class="main-app">
+          <header class="header">
+            <div class="container custom-container"><div class="header__row">
+  <ul class="top-menu">
+    <li class="top-menu__item">
+      <a href="./index.html" class="top-menu__link">
+        <svg class="icon" width="91" height="32">
+          <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="top-menu__item">
+      <a href="#" class="top-menu__link text-default text-x-small">О сервисе</a>
+    </li>
+    <li class="top-menu__item">
+      <a href="#" class="top-menu__link text-default text-x-small">Финтех блог</a>
+    </li>
+  </ul>
+  <a href="" class="header__button-lang d-flex a-center">
+      <img class="icon" id="languageFlag" src="./assets/icons/flag.svg" alt="" />
+      <span class="text" id="languageText">Eng</span>
+    </a>
+</div>
+</div>
+          </header>
+          <main class="main-page">
+            <section class="section-heading">
+              <div class="container custom-container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="title">
+                      Добро пожаловать в иследовательскую базу финтех проектов
+                      СНГ и международных игроков
+                    </h2>
+                    <span class="text-default text-medium">Мы работаем сделать базу большим, вы найдете
+                      аналитические данные для выхода на рынок или запуска
+                      проекта</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section-grid">
+              <div class="container custom-container">
+                <div class="grid">
+                  <div class="grid__heading">
+                    <h4 class="title">Перевод денег</h4>
+                    <button class="btn large" id="filterBtn">
+                      <svg class="icon" width="16" height="16">
+                        <use xlink:href="./assets/icons/sprite.svg#hamburger-icon"></use>
+                      </svg>
+                      <span class="text-default bold">Фильтр</span>
+                    </button>
+                  </div>
+                  <ul class="grid__list"></ul>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+    <div class="popup-wrap">
+    <div class="popup-wrap__close-btn">
+        <svg class="icon" width="12" height="12">
+            <use xlink:href="./assets/icons/sprite.svg#close"></use>
+        </svg>
+    </div>
+    <div class="popup-wrap__inner">
+        <form class="registration-wrap">
+            <h3 class="title">Регистрация</h3>
+            <div class="registration-wrap__content">
+                <div class="registration-wrap__field">
+                    <input type="text" class="registration-wrap__input" placeholder="Ваше имя и фамилия">
+                    <span class="registration-wrap__error">error text</span>
+                </div>
+                <div class="registration-wrap__field">
+                    <input type="text" class="registration-wrap__input" placeholder="Компания">
+                    <span class="registration-wrap__error"></span>
+                </div>
+                <div class="registration-wrap__field">
+                    <input type="text" class="registration-wrap__input" placeholder="Должность">
+                    <span class="registration-wrap__error"></span>
+                </div>
+                <div class="registration-wrap__field">
+                    <input type="email" class="registration-wrap__input" placeholder="E-mail">
+                    <span class="registration-wrap__error"></span>
+                </div>
+                <div class="registration-wrap__field">
+                    <input type="number" class="registration-wrap__input" placeholder="Telegram или WhatsApp номер">
+                    <span class="registration-wrap__error"></span>
+                    <span class="registration-wrap__field-text">Мы отправим доступ на сервис в указанный телеграм номер</span>
+                </div>
+                <label class="registration-wrap__field registration-wrap__label d-flex a-center">
+                    <input type="checkbox" class="registration-wrap__checkbox">
+                    <span class="registration-wrap__mask"></span>
+                    <span class="registration-wrap__text">Согласень с условиями обработки данных</span>
+                </label>
+                <button class="btn x-large mx-auto d-block">Получить доступ</button>
+            </div>
+        </form>
+    </div>
+</div>
+    <div class="popup-wrap success-completed">
+    <div class="popup-wrap__inner">
+        <div class="success-completed">
+            <div class="success-completed__content">
+                <svg class="icon" width="64" height="64">
+                    <use xlink:href="./assets/icons/sprite.svg#done"></use>
+                </svg>
+                <h2 class="title">Cпасибо!</h2>
+                <span class="text-default text-large">Вы успешно заполнили форму</span>
+            </div>
+            <button class="btn xx-large">Перейти к демо</button>
+        </div>
+    </div>
+</div>
+    <div class="popup-wrap success-done">
+    <div class="popup-wrap__close-btn">
+        <svg class="icon" width="12" height="12">
+            <use xlink:href="./assets/icons/sprite.svg#close"></use>
+        </svg>
+    </div>
+    <div class="popup-wrap__inner">
+        <div class="success-completed">
+            <div class="success-completed__content">
+                <svg class="icon" width="64" height="64">
+                    <use xlink:href="./assets/icons/sprite.svg#done"></use>
+                </svg>
+                <h2 class="title">Спасибо за ваш интерес</h2>
+                <span class="text-default text-large">У нас есть ваши контакты. Мы скоро с вами свяжемся c вами для предоставление полного доступа.</span>
+            </div>
+            <div class="success-done__blog">
+                <h5 class="title">Наш блог</h5>
+                <a href="https://www.spot.uz/ru/2023/01/21/fintech/" 
+                class="success-done__blog-link text-default text-medium" target="_blank">
+                    Топ финтех игроков на рынке Узбекистана
+                    <svg class="icon" width="16" height="16">
+                        <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="overlay"></div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

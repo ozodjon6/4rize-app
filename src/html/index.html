@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web app | Home Page</title>
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <aside class="sidebar">
+          @@include('blocks/sidebar.html')
+        </aside>
+        <div class="main-app">
+          <header class="header">
+            <div class="container custom-container">@@include('blocks/header.html')</div>
+          </header>
+          <main class="main-page">
+            <section class="section-heading">
+              <div class="container custom-container">
+                <div class="row">
+                  <div class="col-12">
+                    <h2 class="title">
+                      Добро пожаловать в иследовательскую базу финтех проектов
+                      СНГ и международных игроков
+                    </h2>
+                    <span class="text-default text-medium">Мы работаем сделать базу большим, вы найдете
+                      аналитические данные для выхода на рынок или запуска
+                      проекта</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section-grid">
+              <div class="container custom-container">
+                <div class="grid">
+                  <div class="grid__heading">
+                    <h4 class="title">Перевод денег</h4>
+                    <button class="btn large" id="filterBtn">
+                      <svg class="icon" width="16" height="16">
+                        <use xlink:href="./assets/icons/sprite.svg#hamburger-icon"></use>
+                      </svg>
+                      <span class="text-default bold">Фильтр</span>
+                    </button>
+                  </div>
+                  <ul class="grid__list"></ul>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+    @@include('blocks/registration-form.html')
+    @@include('blocks/success-completed.html')
+    @@include('blocks/success-done.html')
+    <div class="overlay"></div>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

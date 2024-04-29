@@ -1,0 +1,112 @@
+.d-flex {
+  display: flex;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.j-beetween {
+  justify-content: space-between;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+
+  @include respond(mobilemini) {
+    margin-bottom: 32px;
+  }
+}
+
+/// Typography title
+
+.btn.xx-large {
+  line-height: 62px;
+  padding: 0 2rem;
+}
+
+.btn.x-large {
+  line-height: 52px;
+  padding: 0 16px
+}
+
+.btn.large {
+  line-height: 44px;
+  padding: 0 16px;
+}
+
+.btn.medium {
+  line-height: 36px;
+  padding: 0 16px;
+}
+
+.btn.small {
+  line-height: 33px;
+  line-height: 0 8px;
+}
+
+.btn.x-small {
+  line-height: 23px;
+  line-height: 0 4px;
+}
+
+/// Typography text 
+
+.text-default {
+  line-height: 160%;
+  color: var(--text-secondary-colour);
+}
+
+.text-x-small {
+  font-size: 14px;
+  letter-spacing: -0.14px;
+}
+
+.text-small {
+  font-size: 16px;
+  letter-spacing: -0.16px;
+}
+
+.text-medium {
+  font-size: 18px;
+  letter-spacing: -0.18px;
+}
+
+.text-large {
+  font-size: 20px;
+  letter-spacing: -0.2px;
+}
+
+.text-x-large {
+  font-size: 24px;
+  letter-spacing: -0.24px;
+
+  @include respond(mobilemini) {
+    font-size: 22px;
+    letter-spacing: -0.22px;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  background: var(--bg-dark-transparent-colour);
+  visibility: hidden;
+  transition: all .05s ease-in-out 300ms;
+  opacity: 0;
+}
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateZ(0);
+  transition: all 50ms ease-in-out 0ms;
+}
