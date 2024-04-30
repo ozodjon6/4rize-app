@@ -1,75 +1,83 @@
 /** @format */
 
 :root {
-  // text
+  // Text
+  --text-primary: #14181f;
+  --text-secondary: #52627a;
+  --text-tertiary: #8595ad;
   --text-primary-inverted: #ffffff;
-  --text-primary-colour: #161f2d;
-  --text-secondary-colour: #525b60;
-  --text-tertiary-colour: #7f8487;
-  --text-black-colour: #000000;
-  --text-color-text-primary: #232832;
+  --text-brand-primary: #1e32e1;
+  --text-brand-secondary: #d51063;
 
-  // Text hover
+  // Brand colours
 
-  --text-color-text-primary-hover: #161f2d;
+  --brand-brand-primary: #1e32e1;
+  --brand-brand-secondary: #d51063;
 
-  // Brand
-  --brand-primary-colour: #1929b9;
-  --brand-primary-hover-colour: #16228d;
-  --brand-secondary-colour: #d21062;
+  // Button colours
 
-  // BG
-  --bg-primary-colour: #ffffff;
-  --bg-secondary-colour: #f2f3f6;
-  --bg-dark-transparent-colour: #00000080;
-  --bg-green-colour: #9cff4f;
-  --bg-gray-sidebar-checkbox-colour: #d3d6db;
+  --button-primary-bg: #1e32e1;
+  --button-primary-bg-hover: #4b5be7;
 
-  // BG Button
-  --bg-brown-color: #efd592;
-  --bg-green-color: #bbef92;
-  --bg-blue-color: #9fd7ff;
-  --bg-pink-color: #ffbaf0;
+  --button-secondary-bg: #d51063;
+  --button-secondary-bg-hover: #f1418b;
 
-  // Icons
-  --icons-primary-colour: #161f2d;
-  --icons-secondary-colour: #848e94;
-  --icons-brand-primary-colour: #1929b9;
-  --icons-primary-inverted-colour: #ffffff;
-  --icons-brand-secondary-colour: #d21061;
-  --icons-home-colour: #a7acb7;
+  --button-disabled-bg: #d1d7e0;
+  --button-outline-primary: #ffffff;
+  --button-outline-accent: #ffffff;
 
-  // Border lines
-  --primary-borderline-colour: #edebef;
-  --border-line-color: #efefef;
-  --border-slider-color: #d3d6db;
+  // Stroke colours
+  --stroke-primary: #edebef;
 
-  // Links
-  --link-primary-colour: #1929b9;
-  --link-secondary-colour: #161f2d;
-  --link-tertiary-colour: #525b60;
+  // Link colours
+  --link-primary: #1e32e1;
+  --link-primary-hover: #7884ed;
 
-  // Links hover
-  --link-primary-hover-colour: #4053ff;
-  --link-secondary-hover-colour: #525b60;
-  --link-tertiary-hover-colour: #788085;
+  --link-secondary: #14181f;
+  --link-secondary-hover: #52627a;
 
-  // System
-  --error-colour: #fe6767;
-  --warning-colour: #eccc27;
-  --success-colour: #10c76f;
-  --color-system-error: #ee505a;
+  --link-tertiary: #52627a;
+  --link-tertiary-hover: #14181f;
 
-  --error-dimmed-colour: #ffcccc;
-  --warning-dimmed-colour: #f4e285;
-  --success-dimmed-colour: #afefd0;
+  // Icon colours
+  --icon-primary: #060a2d;
+  --icon-secondary: #8595ad;
+  --icon-tertiary: #a3afc2;
 
-  // Input
+  --icon-brand-primary: #1e32e1;
+  --icon-brand-secondary: #d51063;
+  --icon-white-colour: #ffffff;
 
-  --input-color-input-border-normal: #e9ebed;
-  --input-color-input-bg-normal: #f7f7f8;
+  // Input Fields
+  --field-bg-normal: #f6f7f9;
+  --field-bg-active: #ffffff;
+  --field-bg-disabled: #e0e4eb;
+  --field-bg-brand: #1e32e1;
 
-  // Pagination
+  --field-stroke-primary: #e0e4eb;
+  --field-stroke-secondary: #c2cad6;
+  --field-stroke-error: #ff5757;
 
-  --pagination-color-circle: #667a99;
+  // Background colours
+
+  --bg-white: #ffffff;
+  --bg-primary: #f6f7f9;
+  --bg-primary-inverted: #14181f;
+  --bg-brand-primary: #1e32e1;
+  --bg-brand-secondary: #d51063;
+  --bg-transparent-60: #060a2d99;
+
+  // System colours
+
+  --system-error: #ff5757;
+  --system-error-dimmed: #ffe0e0;
+
+  --system-warning: #f3b821;
+  --system-warning-dimmed: #fcf0cf;
+
+  --system-success: #31b546;
+  --system-success-dimmed: #bfeec6;
+
+  --system-neutral: #8595ad;
+  --system-neutral-dimmed: #f0f2f5;
 }

@@ -1,3 +1,5 @@
+/** @format */
+
 .d-flex {
   display: flex;
 }
@@ -27,7 +29,7 @@
 
 .btn.x-large {
   line-height: 52px;
-  padding: 0 16px
+  padding: 0 16px;
 }
 
 .btn.large {
@@ -50,11 +52,11 @@
   line-height: 0 4px;
 }
 
-/// Typography text 
+/// Typography text
 
 .text-default {
   line-height: 160%;
-  color: var(--text-secondary-colour);
+  color: var(--text-secondary);
 }
 
 .text-x-small {
@@ -98,9 +100,9 @@
   right: 0;
   bottom: 0;
   z-index: 90;
-  background: var(--bg-dark-transparent-colour);
+  background: var(--bg-transparent-60);
   visibility: hidden;
-  transition: all .05s ease-in-out 300ms;
+  transition: all 0.05s ease-in-out 300ms;
   opacity: 0;
 }
 
