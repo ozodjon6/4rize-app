@@ -236,7 +236,7 @@
   display: none;
   opacity: 0;
   transition: all 0.2s ease-in-out;
-  background: var(--bg-secondary-colour);
+  background: var(--bg-primary);
   border-radius: 8px;
   padding: 32px;
   height: 100%;
@@ -294,7 +294,7 @@
       color: var(--pagination-color-circle);
 
       &.swiper-pagination-bullet-active {
-        background-color: var(--brand-primary-colour);
+        background-color: var(--brand-primary);
       }
     }
   }
@@ -320,7 +320,7 @@
     max-width: 243px;
     margin: 0 auto;
     border-radius: 4px;
-    border-color: var(--border-color-border-quaternary, #bdc1c9);
+    border-color: var(--stroke-primary);
 
     @include respond(mobilemini) {
       bottom: 24px;

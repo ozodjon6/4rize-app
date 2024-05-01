@@ -138,13 +138,17 @@ body {
 
 .btn {
   color: var(--text-primary-inverted);
-  background-color: var(--brand-primary);
+  background-color: var(--button-primary-bg);
   border-radius: 4px;
   transition: all 0.3s;
   font-weight: 700;
 
   &:hover {
-    background-color: var(--brand-primary-hover);
+    background-color: var(--button-primary-bg-hover);
+  }
+
+  .text-default {
+    color: inherit;
   }
 }
 

@@ -24,12 +24,16 @@
           <main class="main-page">
             <section class="section-heading">
               <div class="container custom-container">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 class="title">
-                      Каталог сценариев
-                    </h2>
-                  </div>
+                <div class="section-heading__innner">
+                  <h2 class="title">
+                    Каталог сценариев
+                  </h2>
+                  <button class="btn large" id="filterBtn">
+                    <svg class="icon" width="16" height="16">
+                      <use xlink:href="./assets/icons/sprite.svg#filter"></use>
+                    </svg>
+                    <span class="text-default bold">Открыть фильтр</span>
+                  </button>
                 </div>
               </div>
             </section>
@@ -38,12 +42,6 @@
                 <div class="grid">
                   <div class="grid__heading">
                     <h4 class="title">Последний добавленные сценарии</h4>
-                    <button class="btn large" id="filterBtn">
-                      <svg class="icon" width="16" height="16">
-                        <use xlink:href="./assets/icons/sprite.svg#hamburger-icon"></use>
-                      </svg>
-                      <span class="text-default bold">Фильтр</span>
-                    </button>
                   </div>
                   <ul class="grid__list">
                     <li class="grid__item unlocked">

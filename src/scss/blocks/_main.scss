@@ -51,6 +51,18 @@
 
   .title {
     margin-bottom: 0px;
+
+    @include respond(tabdesk) {
+      margin-right: 16px;
+      padding-right: 16px;
+      border-right: 1px solid var(--stroke-primary);
+    }
+
+    @include respond(mobilemini) {
+      border: 0 none;
+      margin-right: 0;
+      padding-right: 0;
+    }
   }
 
   @include respond(mobilemini) {
@@ -101,6 +113,35 @@
 
     @include respond(mobilemini) {
       display: block;
+    }
+  }
+}
+
+.section-heading__innner {
+  display: flex;
+  align-items: center;
+
+  @include respond(mobilemini) {
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .btn {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    height: 44px;
+
+    @include respond(tabdesk) {
+      display: flex;
+    }
+
+    @include respond(mobilemini) {
+      height: 32px;
+      .text-default {
+        font-size: 12px;
+      }
     }
   }
 }
