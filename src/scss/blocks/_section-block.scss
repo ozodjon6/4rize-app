@@ -1,0 +1,16 @@
+/** @format */
+.section-block {
+  margin-top: 8rem;
+}
+.section-block__heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.section-block__heading-link {
+  color: var(--link-primary);
+  padding-left: 16px;
+  border-left: 1px solid var(--stroke-primary);
+}

@@ -1,3 +1,5 @@
+/** @format */
+
 * {
   padding: 0;
   margin: 0;
@@ -50,7 +52,7 @@ a {
 
   &:hover {
     text-decoration: none;
-    color: var(--link-primary-hover-colour);
+    color: var(--link-primary-hover);
   }
 }
 
@@ -96,9 +98,8 @@ html:focus-within {
 
 body {
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-primary-colour);
-  color: var(--text-primary-colour);
+  font-family: "Inter", sans-serif;
+  color: var(--text-primary);
   @include regular;
   max-width: 100%;
   overflow: hidden;
@@ -137,23 +138,23 @@ body {
 
 .btn {
   color: var(--text-primary-inverted);
-  background-color: var(--brand-primary-colour);
+  background-color: var(--brand-primary);
   border-radius: 4px;
   transition: all 0.3s;
   font-weight: 700;
 
   &:hover {
-    background-color: var(--brand-primary-hover-colour);
+    background-color: var(--brand-primary-hover);
   }
 }
 
 // Title
 .title {
   font-weight: 700;
-  color: var(--text-primary-colour);
+  color: var(--text-primary);
 }
 .text-body {
-  color: var(--text-secondary-colour);
+  color: var(--text-secondary);
   font-size: 18px;
   display: block;
 }

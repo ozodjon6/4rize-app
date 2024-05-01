@@ -7,9 +7,11 @@
 
 .main-app {
   width: 100%;
+  border-left: 1px solid var(--stroke-primary);
 }
 
 .main-app.inside-page {
+  border: 0 none;
   .top-menu .top-menu__item:first-child {
     display: block;
   }

@@ -12,8 +12,8 @@
     max-width: 23rem;
     position: relative;
     padding: 25px 0;
-    height: 100vh;
-    border-right: 1px solid var(--stroke-primary);
+    height: 100%;
+    min-height: 100vh;
     background-color: var(--bg-white);
 
     @include respond(tabdesk) {
@@ -96,6 +96,28 @@
   display: block;
 }
 
+.filter__search {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.filter__search-input {
+  background-color: var(--field-bg-normal);
+  border: 1px solid var(--field-stroke-primary);
+  border-radius: 4px;
+  padding: 6px 8px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19.2px;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--field-stroke-secondary);
+  }
+}
+
 .filter__list {
   .filter__item {
     margin-bottom: 12px;
@@ -132,6 +154,7 @@
       align-items: center;
       justify-content: center;
       margin-right: 8px;
+      flex-shrink: 0;
 
       &::before {
         content: "";

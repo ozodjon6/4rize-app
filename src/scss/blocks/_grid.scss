@@ -5,18 +5,15 @@
   flex-wrap: wrap;
   margin-top: -32px;
   margin-right: -32px;
-  margin-bottom: -32px;
 
   @include respond(tabdesk) {
     margin-right: -20px;
     margin-top: -20px;
-    margin-bottom: -20px;
   }
 
   @include respond(mobilemini) {
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: -32px;
   }
 
   .grid__item {
@@ -25,8 +22,7 @@
     flex: 0 0 calc((100% - 4 * 32px) / 4);
     max-width: calc((100% - 4 * 32px) / 4);
     margin-right: 32px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 40px;
 
     @include respond(tabdesk) {
       margin-right: 20px;
@@ -105,7 +101,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: var(--link-primary-hover-colour);
+    color: var(--link-primary-hover);
     cursor: pointer;
   }
 }
@@ -115,7 +111,7 @@
   transition: all 0.3s;
 
   &:hover {
-    color: var(--link-secondary-hover-colour);
+    color: var(--link-secondary-hover);
   }
 }
 

@@ -118,28 +118,28 @@ window.addEventListener("DOMContentLoaded", () => {
         const changeTextButtons = document.querySelectorAll(".filter__more");
         const insidePageClickBtn = document.querySelectorAll(".info-list__link");
 
-        for (let i = 0; i < filterItemCheckbox.length; i++) {
-            filterItemCheckbox[i].addEventListener("click", (event) => {
-                event.preventDefault();
-                if (!event.target.classList.contains("unlocked")) {
-                    if (popupWrap) {
-                        popupWrap.classList.add("active");
-                        document.body.style.overflowX = "hidden";
-                        document.body.style.position = "fixed";
-                        overlayOpen();
-                    } else {
-                        document.body.style.overflowX = "";
-                        document.body.style.position = "";
-                    }
-                }
+        // for (let i = 0; i < filterItemCheckbox.length; i++) {
+        //   filterItemCheckbox[i].addEventListener("click", (event) => {
+        //     event.preventDefault();
+        //     if (!event.target.classList.contains("unlocked")) {
+        //       if (popupWrap) {
+        //         popupWrap.classList.add("active");
+        //         document.body.style.overflowX = "hidden";
+        //         document.body.style.position = "fixed";
+        //         overlayOpen();
+        //       } else {
+        //         document.body.style.overflowX = "";
+        //         document.body.style.position = "";
+        //       }
+        //     }
 
-                if (window.matchMedia("(max-width: 991px)").matches) {
-                    overlay.style.zIndex = "1000";
-                } else {
-                    overlay.style.zIndex = "100";
-                }
-            });
-        }
+        //     if (window.matchMedia("(max-width: 991px)").matches) {
+        //       overlay.style.zIndex = "1000";
+        //     } else {
+        //       overlay.style.zIndex = "100";
+        //     }
+        //   });
+        // }
 
         for (let i = 0; i < gridItemImgLink.length; i++) {
             gridItemImgLink[i].addEventListener("click", (event) => {
@@ -322,147 +322,6 @@ window.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
-
-    // function magnificPopupSliderWithJquery() {
-    //   if (typeof jQuery !== "undefined") {
-    //     $(document).ready(function () {
-    //       let photoIndex;
-    //       const mainSlider = new Swiper(".main-slider", {
-    //         loop: false,
-    //         slidesPerView: "7",
-    //         spaceBetween: 12,
-
-    //         navigation: {
-    //           nextEl: ".swiper-button-next",
-    //           prevEl: ".swiper-button-prev",
-    //         },
-
-    //         // Breakpoint for adaptive
-    //         breakpoints: {
-    //           0: {
-    //             slidesPerView: 2.8,
-    //             spaceBetween: 16,
-    //           },
-    //           321: {
-    //             slidesPerView: 3.5,
-    //           },
-    //           768: {
-    //             slidesPerView: 6,
-    //           },
-    //           992: {
-    //             slidesPerView: 6.6,
-    //           },
-    //         },
-    //       });
-
-    //       const galleryTop = new Swiper(".gallery-top", {
-    //         spaceBetween: 12,
-    //         loop: false,
-    //         freeMode: false,
-    //         initialSlide: photoIndex,
-    //         keyboard: {
-    //           enabled: true,
-    //         },
-    //         navigation: {
-    //           prevEl: ".swiper-button-prev",
-    //           nextEl: ".swiper-button-next",
-    //         },
-    //         pagination: {
-    //           el: ".swiper-pagination",
-    //           clickable: true,
-    //         },
-    //       });
-
-    //       $(".slider__content .swiper-slide").on("click", function () {
-    //         const $this = $(this);
-    //         const photoIndex = $this.data("startindex");
-
-    //         $.magnificPopup.open({
-    //           items: {
-    //             src: ".slider__content-gallery",
-    //             type: "inline",
-    //           },
-    //           closeBtnInside: true,
-    //           removalDelay: 300,
-    //           callbacks: {
-    //             beforeOpen: function () {},
-    //             open: function () {
-    //               $(document.body).css({
-    //                 overflowX: "hidden",
-    //                 position: "fixed",
-    //                 right: "0",
-    //                 left: "0",
-    //               });
-
-    //               $(".slider__content-gallery").addClass("active");
-
-    //               // Slide to the correct index in the gallery top slider
-    //               galleryTop.slideTo(photoIndex);
-
-    //               // Ensure the initial position is set correctly
-    //               galleryTop.update();
-
-    //               // downloadButton.addEventListener("click", function () {
-    //               //   downloadCurrentImage();
-    //               // });
-
-    //               // downloadAllButton.addEventListener("click", function () {
-    //               //   downloadAllImages();
-    //               // });
-
-    //               // function downloadCurrentImage() {
-    //               //   var activeSlide = galleryTop.slides[galleryTop.activeIndex];
-    //               //   var imageElement = activeSlide.querySelector("img");
-
-    //               //   var downloadLink = document.createElement("a");
-    //               //   downloadLink.href = imageElement.src;
-    //               //   downloadLink.download =
-    //               //     "image" + (galleryTop.activeIndex + 1) + ".jpg";
-    //               //   downloadLink.target = "_blank";
-
-    //               //   document.body.appendChild(downloadLink);
-    //               //   downloadLink.click();
-
-    //               //   document.body.removeChild(downloadLink);
-    //               // }
-
-    //               // function downloadAllImages() {
-    //               //   for (var i = 0; i < galleryTop.slides.length; i++) {
-    //               //     galleryTop.slideTo(i);
-    //               //     downloadCurrentImage();
-    //               //   }
-    //               // }
-    //             },
-    //             close: function () {
-    //               $(document.body).css({ overflowX: "", position: "" });
-    //             },
-    //           },
-    //         });
-    //         $("#downloadButton").on("click", function () {
-    //           downloadCurrentImage();
-    //           console.log("download");
-    //         });
-
-    //         function downloadCurrentImage() {
-    //           var activeSlide = galleryTop.slides[galleryTop.activeIndex];
-    //           var imageElement = activeSlide.querySelector("img");
-
-    //           var downloadLink = document.createElement("a");
-    //           downloadLink.href = imageElement.src;
-    //           downloadLink.download =
-    //             "image" + (galleryTop.activeIndex + 1) + ".png";
-
-    //           document.body.appendChild(downloadLink);
-    //           downloadLink.click();
-
-    //           document.body.removeChild(downloadLink);
-    //         }
-    //       });
-    //     });
-    //   } else {
-    //     console.log("jQuery is not available on this page.");
-    //   }
-    // }
 
     function magnificPopupSliderWithJquery() {
         if (typeof jQuery !== "undefined") {
