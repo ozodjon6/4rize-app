@@ -1,52 +1,53 @@
+/** @format */
+
 .inside-page__content {
   max-width: 1168px;
   margin: 0 auto;
 }
 
 .inside-page__heading {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    @include respond(tabdesk) {
-      margin-bottom: 24px;
+  @include respond(tabdesk) {
+    margin-bottom: 24px;
+  }
+
+  @include respond(mobilemini) {
+    margin-bottom: 16px;
+  }
+
+  .inside-page__back {
+    display: block;
+    color: var(--link-primary-colour);
+    margin-bottom: 5px;
+
+    &:hover {
+      cursor: pointer;
     }
 
-    @include respond(mobilemini) {
-      margin-bottom: 16px;
+    svg {
+      transform: rotate(180deg);
+      margin-right: 10px;
     }
 
-    .inside-page__back {
-        display: block;
-        color: var(--link-primary-colour);
-        margin-bottom: 5px;
-
-        &:hover {
-          cursor: pointer;
-        }
-
-        svg {
-            transform: rotate(90deg);
-            margin-right: 10px;
-        }
-
-        .text-default {
-            color: inherit;
-        }
+    .text-default {
+      color: inherit;
     }
+  }
 
-    .company-logo {
-      svg {
-        @include respond(tabdesk) {
-          width: 101px;
-          height: 40px;
-        }
+  .company-logo {
+    svg {
+      @include respond(tabdesk) {
+        width: 101px;
+        height: 40px;
       }
     }
+  }
 }
 
 // content-body
 
 .content-body {
-
   iframe {
     aspect-ratio: 16 / 9;
     width: 100%;

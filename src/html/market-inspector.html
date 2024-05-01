@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web app | Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <div id="root">
+        <div class="outer-wrapper">
+            <div class="wrapper">
+                <div class="main-app inside-page">
+                    <header class="header">
+                        <div class="container">@@include('blocks/header.html')</div>
+                    </header>
+                    <main class="main-page inside-page">
+                        <section class="inside-page__heading">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 d-flex a-center j-beetween mb-2 mb-md-0">
+                                        <a href="./index.html" class="inside-page__back d-flex a-center">
+                                            <svg class="icon d-block" width="16" height="16">
+                                                <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
+                                            </svg>
+                                            <p class="text-default text-x-small">Назад</p>
+                                        </a>
+                                        <svg class="icon d-block d-md-none" width="58" height="23">
+                                            <use xlink:href="./assets/icons/sprite.svg#uzum-bank"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-start align-items-lg-center j-beetween">
+                                        <h2 class="title">
+                                            Перевод денег с карты на карту Uzum
+                                        </h2>
+                                        <span class="company-logo d-none d-md-block">
+                                            <svg class="icon" width="108" height="43">
+                                                <use xlink:href="./assets/icons/sprite.svg#uzum-bank"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="inside-page__content">
+                            <div class="row">
+                                <div class="col-12 col-lg-8">
+                                    <div class="content-body mb-64">
+                                        <div class="container full-container">
+                                            <div style="padding:70.24% 0 0 0;position:relative;"><iframe
+                                                    src="https://player.vimeo.com/video/226636274?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                                                    style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider mb-64">
+                                        <div class="container">
+                                            <div class="slider__heading">
+                                                <h4 class="title">Скриншоты</h4>
+                                            </div>
+                                            @@include('blocks/slider.html')
+                                        </div>
+                                    </div>
+                                    <div class="options d-block d-lg-none">
+                                        <div class="container">
+                                            <ul class="options__list">
+                                                <li class="options__item">
+                                                    <div class="options__item-wrap">
+                                                        <div class="info-list">
+                                                            <h5 class="title">Оценка</h5>
+                                                            <div class="info-list__item">
+                                                                <div class="info-list__body">
+                                                                    <span class="text-default text-small">Количество
+                                                                        шагов до цели:</span>
+                                                                    <span
+                                                                        class="text-default text-x-small d-flex a-center">
+                                                                        <strong class="info-list__number">12</strong>
+                                                                        <p class="info-list__text">
+                                                                            ( лучший результат у
+                                                                            <a href="" class="info-list__link">Click</a>
+                                                                            <strong>: 8 </strong>
+                                                                            )
+                                                                        </p>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-list__item">
+                                                                <div class="info-list__body">
+                                                                    <span class="text-default text-small">Количество
+                                                                        шагов до цели:</span>
+                                                                    <span
+                                                                        class="text-default text-x-small d-flex a-center">
+                                                                        <strong class="info-list__number">8 из
+                                                                            10</strong>
+                                                                        <p class="info-list__text">
+                                                                            ( лучший результат у
+                                                                            <a href="" class="info-list__link">Payme</a>
+                                                                            <strong>: 8 </strong>
+                                                                            )
+                                                                        </p>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="info-list__item">
+                                                                <div class="info-list__body">
+                                                                    <span class="text-default text-small">Количество
+                                                                        шагов до цели:</span>
+                                                                    <span
+                                                                        class="text-default text-x-small d-flex a-center">
+                                                                        <strong class="info-list__number">4 из
+                                                                            10</strong>
+                                                                        <p class="info-list__text">
+                                                                            ( лучший результат у
+                                                                            <a href="" class="info-list__link">Payme</a>
+                                                                            <strong>: 9 </strong>
+                                                                            )
+                                                                        </p>
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="options__item-wrap">
+                                                        <div class="info-list">
+                                                            <h5 class="title">Особенности</h5>
+                                                            <div class="info-list__item">
+                                                                <ul class="info-list__content">
+                                                                    <li
+                                                                        class="info-list__content-item text-default text-small">
+                                                                        Сканирование карты</li>
+                                                                    <li
+                                                                        class="info-list__content-item text-default text-small">
+                                                                        Выбор всей суммы доступный
+                                                                        на балансе карты</li>
+                                                                    <li
+                                                                        class="info-list__content-item text-default text-small">
+                                                                        Оставить комментарий к
+                                                                        платежу</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="options__item">
+                                                    <div class="options__item-wrap">
+                                                        <div class="info-list">
+                                                            <h5 class="title">Информация</h5>
+                                                            <div class="info-list__item">
+                                                                <span
+                                                                    class="text-default text-small d-block">Приложение:</span>
+                                                                <strong
+                                                                    class="text-default text-small bold">Uzum</strong>
+                                                            </div>
+                                                            <div class="info-list__item">
+                                                                <span
+                                                                    class="text-default text-small d-block">Платформа::</span>
+                                                                <strong class="text-default text-small bold">iOS
+                                                                    (16)</strong>
+                                                            </div>
+                                                            <div class="info-list__item">
+                                                                <span class="text-default text-small d-block">Версия
+                                                                    приложение::</span>
+                                                                <strong
+                                                                    class="text-default text-small bold">10.5.6</strong>
+                                                            </div>
+                                                            <div class="info-list__item">
+                                                                <span class="text-default text-small d-block">Дата
+                                                                    создание отчета::</span>
+                                                                <strong class="text-default text-small bold">13 июня
+                                                                    2023 г.</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card-opinion">
+                                        <div class="container">
+                                            <h4 class="title">Мнение эксперта</h4>
+                                            <span>Бывает так, что пользоваться приложением нет сил. Оно не понимает вас,
+                                                и с ним тяжело и
+                                                неудобно работать (как в случае с небезызвестным сервисом для поиска
+                                                кадров). Такое
+                                                взаимодействие раздражает, и после 5-10 минут мучений пользователь
+                                                закрывает приложение и
+                                                удаляет все его следы раз и навсегда. Впоследствии люди, опасаясь новых
+                                                разочарований, стараются
+                                                не использовать и прочие продукты данного разработчика, не открывают веб
+                                                или мобильную версии
+                                                сайта.</span>
+                                            <ul>
+                                                <li>Выглядит не плохо</li>
+                                                <li>Работает плохо</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 d-none d-lg-block">
+                                    <div class="options">
+                                        <div class="container">
+                                            <ul class="options__list">
+                                                <li class="options__item">
+                                                    <div class="options__item-wrap">
+                                                        <div class="info-list">
+                                                            <h5 class="title">Информация</h5>
+                                                            <div class="info-list__item">
+                                                                <span
+                                                                    class="text-default text-x-small d-block">Приложение:</span>
+                                                                <strong
+                                                                    class="text-default text-small bold">Uzum</strong>
+                                                            </div>
+                                                            <div class="info-list__item">
+                                                                <span
+                                                                    class="text-default text-x-small d-block">Платформа::</span>
+                                                                <strong class="text-default text-small bold">iOS
+                                                                    (16)</strong>
+                                                            </div>
+                                                            <div class="info-list__item">
+                                                                <span class="text-default text-x-small d-block">Версия
+                                                                    приложение::</span>
+                                                                <strong
+                                                                    class="text-default text-small bold">10.5.6</strong>
+                                                            </div>
+                                                            <div class="info-list__item">
+                                                                <span class="text-default text-x-small d-block">Дата
+                                                                    создание отчета::</span>
+                                                                <strong class="text-default text-small bold">13 июня
+                                                                    2023 г.</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="options__item">
+                                                    <div class="options__item-wrap">
+                                                        <div class="history-list">
+                                                            <h5 class="title">История (2)</h5>
+                                                            <div class="history-list__item">
+                                                                <a href="#" class="history-list__link">
+                                                                    <span class="text-default text-x-small">10.5.6 от
+                                                                        13.08.2024</span>
+                                                                    <svg class="icon" width="16" height="16">
+                                                                        <use
+                                                                            xlink:href="./assets/icons/sprite.svg#play">
+                                                                        </use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <div class="history-list__item">
+                                                                <a href="#" class="history-list__link">
+                                                                    <span class="text-default text-x-small">10.5.1 от
+                                                                        23.11.2023</span>
+                                                                    <svg class="icon" width="16" height="16">
+                                                                        <use
+                                                                            xlink:href="./assets/icons/sprite.svg#play">
+                                                                        </use>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="options__item-wrap">
+                                                        <div class="market-list">
+                                                            <h5 class="title">
+                                                                Маркет инстектор
+                                                                <span class="market-list__text">new</span>
+                                                            </h5>
+                                                            <div class="market-list__item">
+                                                                <div class="market-list__item-content">
+                                                                    <span class="text-small">Рейтинг в Apple App
+                                                                        Store:</span>
+                                                                    <strong>4.2</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="market-list__item">
+                                                                <div class="market-list__item-content">
+                                                                    <span>Рейтинг в Google Play Market:</span>
+                                                                    <strong>4.8</strong>
+                                                                </div>
+                                                            </div>
+                                                            <div class="market-list__item">
+                                                                <div class="rating-block">
+                                                                    <div class="rating-block__head">
+                                                                        <div class="rating-block__author text-x-small">
+                                                                            netpass2010</div>
+                                                                        <p class="rating-block__date text-x-small">12
+                                                                            марта 2024 г.</p>
+                                                                    </div>
+                                                                    <span class="rating-block__rate">
+                                                                        <img src="../assets/icons/rating.svg"
+                                                                            alt="Rating">
+                                                                        <img src="../assets/icons/rating.svg"
+                                                                            alt="Rating">
+                                                                        <img src="../assets/icons/rating.svg"
+                                                                            alt="Rating">
+                                                                        <img src="../assets/icons/rating.svg"
+                                                                            alt="Rating">
+                                                                        <img src="../assets/icons/rating.svg"
+                                                                            alt="Rating">
+                                                                    </span>
+                                                                    <p class="rating-block__descr text-x-small">
+                                                                        После обновления приложение "умерло". Крайне
+                                                                        долгая загрузка после запуска, а при
+                                                                        входе обнаружилось
+                                                                        После обновления приложение "умерло". Крайне
+                                                                        долгая загрузка после запуска, а при
+                                                                        входе обнаружилось
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="market-list__item">
+                                                                <div class="new-tab">
+                                                                    <a class="new-tab__link" href="">Больше
+                                                                        информации</a>
+                                                                    <svg class="icon" width="16" height="16">
+                                                                        <use
+                                                                            xlink:href="./assets/icons/sprite.svg#new-tab">
+                                                                        </use>
+                                                                    </svg>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="product">
+                                        <div class="container">
+                                            <div class="product__heading">
+                                                <h4 class="title">Другие похожие продукты</h4>
+                                            </div>
+                                            <ul class="product__list grid__list d-flex a-center">
+                                                <li class="grid__item">
+
+                                                    <a href="" class="image-wrap">
+                                                        <img src="./assets/image/image-1.png"
+                                                            srcset="./assets/image/image-1@2x.png"
+                                                            alt="Uzum card image">
+                                                    </a>
+                                                    <div class="grid__item-content">
+                                                        <a href="#"
+                                                            class="grid__item-title text-default text-x-small">Uzum</a>
+                                                        <a href="#"
+                                                            class="grid__item-descr text-default text-small bold">Перевод
+                                                            денег с карты на
+                                                            карту
+                                                            Uzum
+                                                        </a>
+                                                        <p class="grid__item-date text-default text-x-small">
+                                                            11 января 2024
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="grid__item">
+
+                                                    <a href="" class="image-wrap">
+                                                        <img src="./assets/image/image-2.png"
+                                                            srcset="./assets/image/image-2@2x.png"
+                                                            alt="Uzum card image">
+                                                    </a>
+                                                    <div class="grid__item-content">
+                                                        <a href="#"
+                                                            class="grid__item-title text-default text-x-small">Payme</a>
+                                                        <a href="#"
+                                                            class="grid__item-descr text-default text-small bold">Перевод
+                                                            денег с карты на
+                                                            карту
+                                                            Payme
+                                                        </a>
+                                                        <p class="grid__item-date text-default text-x-small">
+                                                            11 января 2024
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="grid__item">
+
+                                                    <a href="" class="image-wrap">
+                                                        <img src="./assets/image/image-3.png"
+                                                            srcset="./assets/image/image-3@2x.png"
+                                                            alt="Uzum card image">
+                                                    </a>
+                                                    <div class="grid__item-content">
+                                                        <a href="#"
+                                                            class="grid__item-title text-default text-x-small">Click</a>
+                                                        <a href="#"
+                                                            class="grid__item-descr text-default text-small bold">Перевод
+                                                            денег с карты на
+                                                            карту
+                                                            Click
+                                                        </a>
+                                                        <p class="grid__item-date text-default text-x-small">
+                                                            11 января 2024
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                                <li class="grid__item">
+
+                                                    <a href="" class="image-wrap">
+                                                        <img src="./assets/image/image-1.png"
+                                                            srcset="./assets/image/image-1@2x.png"
+                                                            alt="Uzum card image">
+                                                    </a>
+                                                    <div class="grid__item-content">
+                                                        <a href="#"
+                                                            class="grid__item-title text-default text-x-small">Uzum</a>
+                                                        <a href="#"
+                                                            class="grid__item-descr text-default text-small bold">Перевод
+                                                            денег с карты на
+                                                            карту
+                                                            Uzum
+                                                        </a>
+                                                        <p class="grid__item-date text-default text-x-small">
+                                                            11 января 2024
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    @@include('blocks/footer.html')
+                </div>
+            </footer>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/magnific-popup.js_1.1.0_jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="./js/fslightbox.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
