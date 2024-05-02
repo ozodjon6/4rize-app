@@ -69,6 +69,8 @@ window.addEventListener("DOMContentLoaded", () => {
         topMenu.classList.toggle("active");
         headerLogo.style.zIndex = "101";
         headerButtonLang.style.zIndex = "101";
+
+        document.body.classList.toggle("active");
       });
 
       if (filterBtn) {

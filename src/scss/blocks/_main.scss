@@ -1,5 +1,10 @@
 /** @format */
 
+body.active {
+  position: fixed;
+  overflow-x: hidden;
+}
+
 .wrapper {
   display: flex;
   align-items: flex-start;

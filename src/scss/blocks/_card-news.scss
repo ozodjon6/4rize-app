@@ -4,11 +4,14 @@
   gap: 32px;
 
   @include respond(desktop) {
+    flex-wrap: wrap;
+  }
+
+  @include respond(phone) {
     flex-direction: column;
   }
 
   @include respond(mobilemini) {
-    flex-direction: column;
     margin-bottom: 64px;
   }
 
@@ -113,7 +116,7 @@
   transition: all 0.3s ease;
 
   &:hover {
-    color: var(--link-tertiary-hover-colour);
+    color: var(--link-tertiary-hover);
     cursor: pointer;
   }
 
