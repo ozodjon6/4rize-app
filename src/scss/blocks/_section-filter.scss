@@ -1,0 +1,28 @@
+/** @format */
+
+.section-heading__innner.is-checked .section-heading__filter {
+  display: flex;
+}
+
+.section-heading__innner.is-checked .section-heading__default {
+  display: none;
+}
+
+.section-heading__filter {
+  display: none;
+  flex-direction: column;
+
+  .title {
+    margin-bottom: 32px;
+  }
+}
+
+.section-heading__default {
+  display: none;
+}
+
+.filter-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}

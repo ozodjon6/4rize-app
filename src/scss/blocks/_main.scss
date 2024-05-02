@@ -55,19 +55,26 @@ body.active {
 .section-heading {
   margin-bottom: 3.2rem;
 
-  .title {
-    margin-bottom: 0px;
-
-    @include respond(tabdesk) {
-      margin-right: 16px;
-      padding-right: 16px;
-      border-right: 1px solid var(--stroke-primary);
-    }
+  .section-heading__default {
+    display: flex;
+    gap: 16px;
 
     @include respond(mobilemini) {
-      border: 0 none;
-      margin-right: 0;
-      padding-right: 0;
+      flex-direction: column;
+    }
+    .title {
+      margin-bottom: 0px;
+
+      @include respond(tabdesk) {
+        padding-right: 16px;
+        border-right: 1px solid var(--stroke-primary);
+      }
+
+      @include respond(mobilemini) {
+        border: 0 none;
+        margin-right: 0;
+        padding-right: 0;
+      }
     }
   }
 
@@ -131,6 +138,10 @@ body.active {
     flex-direction: column;
     align-items: start;
     gap: 16px;
+  }
+
+  .btn.outline {
+    height: 32px;
   }
 
   .btn {

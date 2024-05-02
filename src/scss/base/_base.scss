@@ -152,6 +152,35 @@ body {
   }
 }
 
+.btn.outline {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.8px;
+  background-color: var(--bg-white);
+  box-shadow: inset 0px 0px 0px 1px var(--button-outline-primary);
+  border-radius: 4px;
+  transition: all 0.3s;
+  color: var(--text-primary);
+  height: 32px;
+  max-width: max-content;
+
+  &:hover {
+    box-shadow: inset 0px 0px 0px 2px var(--button-outline-primary);
+  }
+
+  &.is-clear {
+    color: var(--text-primary-brand);
+    box-shadow: inset 0px 0px 0px 1px var(--button-outline-accent);
+
+    &:hover {
+      box-shadow: inset 0px 0px 0px 2px var(--button-outline-accent);
+    }
+  }
+}
+
 // Title
 .title {
   font-weight: 700;
