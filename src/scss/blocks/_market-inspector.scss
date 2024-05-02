@@ -1,0 +1,91 @@
+/** @format */
+
+.inspector-search {
+  margin-top: 32px;
+
+  .filter__search-input {
+    background-color: var(--bg-white);
+    background-image: url(../../assets/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: left 16px center;
+    font-size: 14px;
+    padding: 16px 16px 16px 44px;
+    flex-shrink: 0;
+  }
+}
+
+// market-card
+
+.inspector-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: -32px;
+  margin-bottom: -40px;
+
+  @include respond(tabdesk) {
+    margin-right: -20px;
+  }
+}
+
+.inspector-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 0 0 calc((100% - 192px) / 6);
+  max-width: calc((100% - 192px) / 6);
+  margin-right: 32px;
+  margin-bottom: 40px;
+
+  @include respond(desktop) {
+    flex: 0 0 calc((100% - 160px) / 5);
+    max-width: calc((100% - 160px) / 5);
+  }
+
+  @include respond(tabdesk) {
+    justify-content: space-between;
+    margin-right: 20px;
+    flex: 0 0 calc((100% - 80px) / 4);
+    max-width: calc((100% - 80px) / 4);
+  }
+
+  @include respond(phone) {
+    flex: 0 0 calc((100% - 40px) / 2);
+    max-width: calc((100% - 40px) / 2);
+  }
+
+  .inspector-list__icon-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: var(--bg-white);
+    padding: 20px 32px;
+    border: 1px solid var(--field-stroke-primary);
+
+    @include respond(tabdesk) {
+      padding: 20px 28px;
+    }
+
+    @include respond(mobilemini) {
+      padding: 24px;
+
+      svg,
+      img {
+        width: 80px;
+        height: 46px;
+      }
+    }
+  }
+
+  .inspector-list__text {
+    color: var(--link-secondary);
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--link-secondary-hover);
+      cursor: pointer;
+    }
+  }
+}
