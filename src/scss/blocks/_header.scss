@@ -11,10 +11,9 @@
   }
 
   @include respond(mobilemini) {
-    padding: 9px 0;
+    padding: 12px 0;
     padding-right: 0px;
     padding-left: 0px;
-    overflow-x: scroll;
 
     &::-webkit-scrollbar {
       background-color: transparent;
@@ -27,15 +26,130 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.mobile-lang-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 187px;
+  width: 100%;
+  gap: 56px;
+}
+
+.header__logo {
+  display: none;
+
+  @include respond(tabdesk) {
+    display: flex;
+  }
 
   @include respond(mobilemini) {
-    width: 413px;
+    svg {
+      width: 58px;
+      height: 20px;
+    }
   }
+}
+
+.header__toggle-btn {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--button-outline-primary);
+  border-radius: 4px;
+  padding: 8px;
+  width: 100%;
+  max-width: 75px;
+
+  .icon-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+  }
+
+  .icon-close {
+    display: none;
+  }
+
+  &.active .icon-close {
+    display: flex;
+  }
+
+  &.active .icon-hamburger {
+    display: none;
+  }
+
+  @include respond(tabdesk) {
+    display: flex;
+    z-index: 101;
+  }
+}
+
+.header__toggle-text {
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--text-primary);
+  line-height: 16.8px;
 }
 
 .top-menu {
   display: flex;
   align-items: center;
+
+  @include respond(tabdesk) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 74px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    max-width: 100%;
+    transition-delay: 0.1s;
+    transition: transform 0.4s ease;
+    transform: translateX(-100%);
+    padding-top: 7rem;
+
+    @include respond(mobilemini) {
+      padding-top: 4rem;
+      top: 6rem;
+    }
+
+    &.active {
+      transform: none;
+
+      .top-menu__item {
+        border: 0 none;
+        margin-bottom: 4rem;
+      }
+
+      .top-menu__item:not(:last-child) {
+        border: 0 none;
+        margin-right: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .top-menu__item.is-profile {
+    display: none;
+
+    @include respond(tabdesk) {
+      display: flex;
+    }
+  }
 
   .top-menu__item.is-new {
     display: flex;
@@ -55,6 +169,10 @@
   }
   .top-menu__item.is-new .top-menu__item-text {
     display: flex;
+
+    @include respond(tabdesk) {
+      display: none;
+    }
   }
 
   .top-menu__item:first-child {
@@ -87,18 +205,21 @@
       margin-right: 24px;
     }
   }
-  .top-menu__item:last-child {
-    @include respond(mobilemini) {
-      padding-right: 24px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      border-right: 1px solid var(--stroke-primary);
-    }
-  }
 
   .top-menu__link {
     display: block;
     color: var(--link-primary);
+
+    @include respond(tabdesk) {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 32px;
+    }
+
+    @include respond(mobilemini) {
+      font-size: 16px;
+      line-height: 25.6px;
+    }
 
     &:hover {
       color: var(--link-primary-hover);
@@ -120,6 +241,11 @@
   border-radius: 50%;
   border: 1px solid var(--stroke-primary);
   margin-right: 32px;
+  flex-shrink: 0;
+
+  @include respond(tabdesk) {
+    display: none;
+  }
 }
 
 .header__button-lang {
@@ -130,6 +256,11 @@
 
   &:hover {
     cursor: pointer;
+  }
+
+  @include respond(tabdesk) {
+    padding-left: 0;
+    border: 0 none;
   }
 
   @include respond(mobilemini) {

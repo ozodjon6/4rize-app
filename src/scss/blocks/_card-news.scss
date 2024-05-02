@@ -3,9 +3,12 @@
   display: flex;
   gap: 32px;
 
+  @include respond(desktop) {
+    flex-direction: column;
+  }
+
   @include respond(mobilemini) {
     flex-direction: column;
-    gap: 8px;
     margin-bottom: 64px;
   }
 
@@ -14,6 +17,22 @@
     flex-direction: column;
     width: 100%;
     gap: 16px;
+
+    @include respond(tabdesk) {
+      flex: 0 0 calc((100% - 32px) / 2);
+      max-width: calc((100% - 32px) / 2);
+      flex-direction: row;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @include respond(mobilemini) {
+      flex-direction: column;
+      gap: 8px;
+    }
   }
 }
 
@@ -24,15 +43,23 @@
   // background-color: var(--bg-circle-yellow-color);
   flex-shrink: 0;
 
+  @include respond(tabdesk) {
+    margin-top: 30px;
+  }
+
   @include respond(mobilemini) {
     width: 32px;
     height: 32px;
-    margin-bottom: 8px;
+    margin-top: 0;
   }
 }
 
 .card-news__heading {
   margin-bottom: 8px;
+
+  @include respond(tabdesk) {
+    flex-direction: column-reverse;
+  }
 
   @include respond(mobilemini) {
     display: flex;
@@ -133,7 +160,7 @@
   }
 
   svg {
-    transform: rotate(-90deg);
+    transform: rotate(0deg);
     flex-shrink: 0;
   }
 }

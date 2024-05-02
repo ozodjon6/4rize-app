@@ -54,6 +54,20 @@ window.addEventListener("DOMContentLoaded", () => {
             const overlay = document.querySelector(".overlay");
             const sidebarCloseBtn = document.querySelector(".sidebar__close");
 
+            // header toggle btn
+
+            const headerToggleBtn = document.querySelector(".header__toggle-btn");
+            const topMenu = document.querySelector(".top-menu");
+            const headerLogo = document.querySelector(".header__logo");
+            const headerButtonLang = document.querySelector(".header__button-lang");
+
+            headerToggleBtn.addEventListener("click", () => {
+                headerToggleBtn.classList.toggle("active");
+                topMenu.classList.toggle("active");
+                headerLogo.style.zIndex = "101";
+                headerButtonLang.style.zIndex = "101";
+            });
+
             if (filterBtn) {
                 filterBtn.addEventListener("click", () => {
                     sidebar.classList.add("open");
@@ -91,7 +105,6 @@ window.addEventListener("DOMContentLoaded", () => {
             }
             if (overlay) {
                 overlay.addEventListener("click", () => {
-                    popupWrap.classList.remove("active");
                     document.body.style.overflowX = "";
                     document.body.style.position = "";
                     overlayClose();

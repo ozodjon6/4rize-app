@@ -31,10 +31,12 @@
     }
 
     @include respond(mobilemini) {
-      @include respond(tabdesk) {
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-bottom: 32px;
+      margin-right: 0px;
+      margin-top: 0px;
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

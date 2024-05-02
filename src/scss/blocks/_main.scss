@@ -139,6 +139,8 @@
 
     @include respond(mobilemini) {
       height: 32px;
+      padding-right: 8px;
+      padding-left: 8px;
       .text-default {
         font-size: 12px;
       }

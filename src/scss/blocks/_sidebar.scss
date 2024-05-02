@@ -59,7 +59,7 @@
   }
 
   &:hover svg {
-    color: var(--icons-brand-secondary-colour);
+    color: var(--icon-brand-secondary);
   }
 }
 
@@ -188,9 +188,13 @@
     max-width: max-content;
     transition: all 0.2s ease;
 
+    svg {
+      transform: rotate(90deg);
+    }
+
     &.active {
       svg {
-        transform: rotate(180deg);
+        transform: rotate(270deg);
       }
     }
 
