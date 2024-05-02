@@ -1,4 +1,8 @@
 /** @format */
+
+.section-block.is-not-found {
+  display: none;
+}
 .card-news {
   display: flex;
   gap: 32px;

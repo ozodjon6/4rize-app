@@ -1,7 +1,15 @@
 /** @format */
 
+.not-found-page.is-visible .not-found {
+  display: flex;
+}
+
 .not-found {
-  background-color: var(bg-white);
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  background-color: var(--bg-white);
   border: 1px solid var(--stroke-primary);
   padding: 4rem;
   border-radius: var(--section-border-radius);

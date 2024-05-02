@@ -58,7 +58,7 @@
                     <h2 class="title">
                       Каталог сценариев
                     </h2>
-                    <button class="btn large" id="filterBtn">
+                    <button class="btn large filter-btn" id="filterBtn">
                       <svg class="icon" width="16" height="16">
                         <use xlink:href="./assets/icons/sprite.svg#filter"></use>
                       </svg>
@@ -199,6 +199,11 @@
                     записи</a>
                 </div>
                 @@include('blocks/card-news.html')
+              </div>
+            </section>
+            <section class="not-found-page">
+              <div class="container custom-container">
+                @@include('blocks/not-found.html')
               </div>
             </section>
           </main>

@@ -288,9 +288,14 @@
 
   .text {
     font-size: 16px;
-    color: var(--link-secondary-colour);
+    color: var(--link-tertiary);
     line-height: 25.6px;
     width: 30px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--link-tertiary-hover);
+    }
 
     @include respond(mobilemini) {
       font-size: 14px;

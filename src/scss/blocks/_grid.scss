@@ -1,5 +1,9 @@
 /** @format */
 
+.section-grid.is-not-found {
+  display: none;
+}
+
 .grid__list {
   display: flex;
   flex-wrap: wrap;
