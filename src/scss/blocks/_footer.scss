@@ -7,9 +7,18 @@
   padding: 4rem;
   border-top: 1px solid var(--stroke-primary);
 
+  @include respond(desktop) {
+    gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include respond(tabdesk) {
+    padding: 14px 32px 24px;
+  }
+
   @include respond(mobilemini) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 20px;
   }
 }
 
@@ -30,6 +39,13 @@
 
 .social__item {
   height: 2rem;
+}
+
+.footer__left,
+.footer__right {
+  @include respond(tabdesk) {
+    display: none;
+  }
 }
 
 .footer__list {
@@ -67,4 +83,49 @@
 
 .text-body {
   font-size: 14px;
+}
+
+// footer__mobile
+
+.footer__mobile {
+  display: none;
+
+  @include respond(tabdesk) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.mobile-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.mobile-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  .mobile-list__link {
+    font-size: 14px;
+    line-height: 22.4px;
+    font-weight: 400;
+    color: var(--link-primary);
+    transition: all 0.3s ease;
+    text-align: center;
+
+    @include respond(mobilemini) {
+      font-size: 12px;
+      line-height: 19.2px;
+    }
+
+    &:hover {
+      color: var(--link-primary-hover);
+    }
+  }
 }
