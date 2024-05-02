@@ -1,11 +1,14 @@
 /** @format */
 
 .footer {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
   padding: 4rem;
   border-top: 1px solid var(--stroke-primary);
+
+  .footer__inner {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+  }
 
   @include respond(desktop) {
     gap: 16px;
@@ -39,6 +42,16 @@
 
 .social__item {
   height: 2rem;
+  transition: all 0.3s ease;
+
+  svg {
+    color: var(--icon-secondary);
+  }
+
+  &:hover svg {
+    cursor: pointer;
+    color: var(--social-hovers);
+  }
 }
 
 .footer__left,

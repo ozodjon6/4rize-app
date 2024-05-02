@@ -53,6 +53,9 @@ window.addEventListener("DOMContentLoaded", () => {
       const sidebar = document.querySelector(".sidebar");
       const overlay = document.querySelector(".overlay");
       const sidebarCloseBtn = document.querySelector(".sidebar__close");
+      const sidebarMobileClose = document.querySelector(
+        "#sidebar-mobile-close"
+      );
 
       // header toggle btn
 
@@ -85,6 +88,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
       if (sidebarCloseBtn) {
         sidebarCloseBtn.addEventListener("click", () => {
+          sidebar.classList.remove("open");
+          overlayClose();
+
+          document.body.style.overflowX = "";
+          document.body.style.position = "";
+        });
+      }
+      if (sidebarMobileClose) {
+        sidebarMobileClose.addEventListener("click", () => {
           sidebar.classList.remove("open");
           overlayClose();
 

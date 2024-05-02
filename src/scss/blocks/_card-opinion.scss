@@ -1,10 +1,21 @@
 /** @format */
 
 .card-opinion {
-  padding: 24px;
-  border-radius: var(--section-border-radius);
-  background-color: var(--bg-white);
   margin-bottom: 82px;
+
+  @include respond(tabdesk) {
+    margin-bottom: 54px;
+  }
+
+  @include respond(mobilemini) {
+    margin-bottom: 32px;
+  }
+
+  .card-opinion__inner {
+    padding: 24px;
+    border-radius: var(--section-border-radius);
+    background-color: var(--bg-white);
+  }
 
   h1,
   h2,

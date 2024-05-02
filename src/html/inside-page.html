@@ -50,7 +50,7 @@
             <section class="inside-page__content">
               <div class="row">
                 <div class="col-12 col-lg-8">
-                  <div class="content-body mb-64">
+                  <div class="content-body">
                     <div class="container full-container">
                       <div style="padding:70.24% 0 0 0;position:relative;"><iframe
                           src="https://player.vimeo.com/video/226636274?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
@@ -59,7 +59,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="slider mb-64">
+                  <div class="slider">
                     <div class="container">
                       <div class="slider__heading">
                         <h4 class="title">Скриншоты</h4>
@@ -67,163 +67,78 @@
                       @@include('blocks/slider.html')
                     </div>
                   </div>
-                  <div class="options d-block d-lg-none">
+                  <div class="card-opinion d-none d-lg-block">
                     <div class="container">
-                      <ul class="options__list">
-                        <li class="options__item">
-                          <div class="options__item-wrap">
-                            <div class="info-list">
-                              <h5 class="title">Оценка</h5>
-                              <div class="info-list__item">
-                                <div class="info-list__body">
-                                  <span class="text-default text-small">Количество шагов до цели:</span>
-                                  <span class="text-default text-x-small d-flex a-center">
-                                    <strong class="info-list__number">12</strong>
-                                    <p class="info-list__text">
-                                      ( лучший результат у
-                                      <a href="" class="info-list__link">Click</a>
-                                      <strong>: 8 </strong>
-                                      )
-                                    </p>
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="info-list__item">
-                                <div class="info-list__body">
-                                  <span class="text-default text-small">Количество шагов до цели:</span>
-                                  <span class="text-default text-x-small d-flex a-center">
-                                    <strong class="info-list__number">8 из 10</strong>
-                                    <p class="info-list__text">
-                                      ( лучший результат у
-                                      <a href="" class="info-list__link">Payme</a>
-                                      <strong>: 8 </strong>
-                                      )
-                                    </p>
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="info-list__item">
-                                <div class="info-list__body">
-                                  <span class="text-default text-small">Количество шагов до цели:</span>
-                                  <span class="text-default text-x-small d-flex a-center">
-                                    <strong class="info-list__number">4 из 10</strong>
-                                    <p class="info-list__text">
-                                      ( лучший результат у
-                                      <a href="" class="info-list__link">Payme</a>
-                                      <strong>: 9 </strong>
-                                      )
-                                    </p>
-                                  </span>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="options__item-wrap">
-                            <div class="info-list">
-                              <h5 class="title">Особенности</h5>
-                              <div class="info-list__item">
-                                <ul class="info-list__content">
-                                  <li class="info-list__content-item text-default text-small">Сканирование карты</li>
-                                  <li class="info-list__content-item text-default text-small">Выбор всей суммы доступный
-                                    на балансе карты</li>
-                                  <li class="info-list__content-item text-default text-small">Оставить комментарий к
-                                    платежу</li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="options__item">
-                          <div class="options__item-wrap">
-                            <div class="info-list">
-                              <h5 class="title">Информация</h5>
-                              <div class="info-list__item">
-                                <span class="text-default text-small d-block">Приложение:</span>
-                                <strong class="text-default text-small bold">Uzum</strong>
-                              </div>
-                              <div class="info-list__item">
-                                <span class="text-default text-small d-block">Платформа::</span>
-                                <strong class="text-default text-small bold">iOS (16)</strong>
-                              </div>
-                              <div class="info-list__item">
-                                <span class="text-default text-small d-block">Версия приложение::</span>
-                                <strong class="text-default text-small bold">10.5.6</strong>
-                              </div>
-                              <div class="info-list__item">
-                                <span class="text-default text-small d-block">Дата создание отчета::</span>
-                                <strong class="text-default text-small bold">13 июня 2023 г.</strong>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="card-opinion">
-                    <div class="container">
-                      <h4 class="title">Мнение эксперта</h4>
-                      <span>Бывает так, что пользоваться приложением нет сил. Оно не понимает вас, и с ним тяжело и
-                        неудобно работать (как в случае с небезызвестным сервисом для поиска кадров). Такое
-                        взаимодействие раздражает, и после 5-10 минут мучений пользователь закрывает приложение и
-                        удаляет все его следы раз и навсегда. Впоследствии люди, опасаясь новых разочарований, стараются
-                        не использовать и прочие продукты данного разработчика, не открывают веб или мобильную версии
-                        сайта.</span>
-                      <ul>
-                        <li>Выглядит не плохо</li>
-                        <li>Работает плохо</li>
-                      </ul>
+                      <div class="card-opinion__inner">
+                        <h4 class="title">Мнение эксперта</h4>
+                        <span>Бывает так, что пользоваться приложением нет сил. Оно не понимает вас, и с ним тяжело и
+                          неудобно работать (как в случае с небезызвестным сервисом для поиска кадров). Такое
+                          взаимодействие раздражает, и после 5-10 минут мучений пользователь закрывает приложение и
+                          удаляет все его следы раз и навсегда. Впоследствии люди, опасаясь новых разочарований,
+                          стараются
+                          не использовать и прочие продукты данного разработчика, не открывают веб или мобильную версии
+                          сайта.</span>
+                        <ul>
+                          <li>Выглядит не плохо</li>
+                          <li>Работает плохо</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-lg-4 d-none d-lg-block">
+                <div class="col-12 col-lg-4">
                   <div class="options">
                     <div class="container">
                       <ul class="options__list">
-                        <li class="options__item">
-                          <div class="options__item-wrap">
-                            <div class="info-list">
-                              <h5 class="title">Информация</h5>
-                              <div class="info-list__item">
-                                <span class="text-default text-x-small d-block">Приложение:</span>
-                                <strong class="text-default text-small bold">Uzum</strong>
-                              </div>
-                              <div class="info-list__item">
-                                <span class="text-default text-x-small d-block">Платформа::</span>
-                                <strong class="text-default text-small bold">iOS (16)</strong>
-                              </div>
-                              <div class="info-list__item">
-                                <span class="text-default text-x-small d-block">Версия приложение::</span>
-                                <strong class="text-default text-small bold">10.5.6</strong>
-                              </div>
-                              <div class="info-list__item">
-                                <span class="text-default text-x-small d-block">Дата создание отчета::</span>
-                                <strong class="text-default text-small bold">13 июня 2023 г.</strong>
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="options__item">
-                          <div class="options__item-wrap">
-                            <div class="history-list">
-                              <h5 class="title">История (2)</h5>
-                              <div class="history-list__item">
-                                <a href="#" class="history-list__link">
-                                  <span class="text-default text-x-small">10.5.6 от 13.08.2024</span>
-                                  <svg class="icon" width="16" height="16">
-                                    <use xlink:href="./assets/icons/sprite.svg#play"></use>
-                                  </svg>
-                                </a>
-                              </div>
-                              <div class="history-list__item">
-                                <a href="#" class="history-list__link">
-                                  <span class="text-default text-x-small">10.5.1 от 23.11.2023</span>
-                                  <svg class="icon" width="16" height="16">
-                                    <use xlink:href="./assets/icons/sprite.svg#play"></use>
-                                  </svg>
-                                </a>
+                        <div class="options__item-wrap">
+                          <li class="options__item">
+                            <div class="options__item-wrap">
+                              <div class="info-list">
+                                <h5 class="title">Информация</h5>
+                                <div class="info-list__item">
+                                  <span class="text-default text-x-small d-block">Приложение:</span>
+                                  <strong class="text-default text-small bold">Uzum</strong>
+                                </div>
+                                <div class="info-list__item">
+                                  <span class="text-default text-x-small d-block">Платформа::</span>
+                                  <strong class="text-default text-small bold">iOS (16)</strong>
+                                </div>
+                                <div class="info-list__item">
+                                  <span class="text-default text-x-small d-block">Версия приложение::</span>
+                                  <strong class="text-default text-small bold">10.5.6</strong>
+                                </div>
+                                <div class="info-list__item">
+                                  <span class="text-default text-x-small d-block">Дата создание отчета::</span>
+                                  <strong class="text-default text-small bold">13 июня 2023 г.</strong>
+                                </div>
                               </div>
                             </div>
-                          </div>
+                          </li>
+                          <li class="options__item">
+                            <div class="options__item-wrap">
+                              <div class="history-list">
+                                <h5 class="title">История (2)</h5>
+                                <div class="history-list__item">
+                                  <a href="#" class="history-list__link">
+                                    <span class="text-default text-x-small">10.5.6 от 13.08.2024</span>
+                                    <svg class="icon" width="16" height="16">
+                                      <use xlink:href="./assets/icons/sprite.svg#play"></use>
+                                    </svg>
+                                  </a>
+                                </div>
+                                <div class="history-list__item">
+                                  <a href="#" class="history-list__link">
+                                    <span class="text-default text-x-small">10.5.1 от 23.11.2023</span>
+                                    <svg class="icon" width="16" height="16">
+                                      <use xlink:href="./assets/icons/sprite.svg#play"></use>
+                                    </svg>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </div>
+                        <li class="options__item">
                           <div class="options__item-wrap">
                             <div class="market-list">
                               <h5 class="title">
@@ -275,6 +190,24 @@
                           </div>
                         </li>
                       </ul>
+                    </div>
+                  </div>
+                  <div class="card-opinion d-lg-none">
+                    <div class="container">
+                      <div class="card-opinion__inner">
+                        <h4 class="title">Мнение эксперта</h4>
+                        <span>Бывает так, что пользоваться приложением нет сил. Оно не понимает вас, и с ним тяжело и
+                          неудобно работать (как в случае с небезызвестным сервисом для поиска кадров). Такое
+                          взаимодействие раздражает, и после 5-10 минут мучений пользователь закрывает приложение и
+                          удаляет все его следы раз и навсегда. Впоследствии люди, опасаясь новых разочарований,
+                          стараются
+                          не использовать и прочие продукты данного разработчика, не открывают веб или мобильную версии
+                          сайта.</span>
+                        <ul>
+                          <li>Выглядит не плохо</li>
+                          <li>Работает плохо</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -362,13 +295,9 @@
               </div>
             </section>
           </main>
-        </div>
-      </div>
-      <footer class="footer">
-        <div class="container">
           @@include('blocks/footer.html')
         </div>
-      </footer>
+      </div>
     </div>
     <div class="overlay"></div>
   </div>

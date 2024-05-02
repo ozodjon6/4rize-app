@@ -15,6 +15,7 @@
     height: 100%;
     min-height: 100vh;
     background-color: var(--bg-white);
+    padding-bottom: 92px;
 
     @include respond(tabdesk) {
       display: flex;
@@ -211,5 +212,47 @@
         color: var(--link-primary-hover-colour);
       }
     }
+  }
+}
+
+.sidebar__bottom {
+  display: none;
+  background-color: var(--bg-white);
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  padding: 24px 32px;
+  width: 100%;
+}
+
+.sidebar.open .sidebar__bottom {
+  display: flex;
+}
+
+.sidebar__btn-close {
+  display: none;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px var(--button-outline-primary);
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: inset 0 0 0 2px var(--button-outline-primary);
+  }
+}
+
+@media (max-width: 320px) {
+  .sidebar .sidebar__inner {
+    max-width: 100%;
+  }
+  .sidebar__bottom {
+    display: flex;
+    gap: 10px;
+  }
+  .sidebar__btn-close {
+    display: flex;
   }
 }

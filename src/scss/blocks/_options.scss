@@ -2,20 +2,47 @@
 
 .content-body {
   margin-right: 16px;
+  margin-bottom: 4rem;
 
   @include respond(tabdesk) {
     margin-right: 0;
+  }
+
+  @include respond(mobilemini) {
+    margin-bottom: 32px;
+  }
+}
+
+.options {
+  @include respond(tabdesk) {
+    margin-bottom: 4rem;
+  }
+
+  @include respond(mobilemini) {
+    margin-bottom: 2rem;
   }
 }
 
 .options__list {
   @include respond(tabdesk) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   @include respond(mobilemini) {
     flex-direction: column;
     margin-bottom: 12px;
+  }
+}
+
+.options__item-wrap {
+  @include respond(tabdesk) {
+    display: flex;
+    width: 100%;
+  }
+
+  @include respond(mobilemini) {
+    flex-direction: column;
   }
 }
 
@@ -30,7 +57,7 @@
 
     @include respond(tabdesk) {
       margin-right: 20px;
-      margin-bottom: 55px;
+      margin-bottom: 20px;
     }
 
     @include respond(mobilemini) {
@@ -46,6 +73,10 @@
 
     &:first-child {
       margin-bottom: 32px;
+
+      @include respond(tabdesk) {
+        margin-bottom: 0;
+      }
 
       @include respond(mobilemini) {
         margin-bottom: 20px;

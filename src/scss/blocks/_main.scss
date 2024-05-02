@@ -35,15 +35,16 @@
 }
 
 .main-page.inside-page {
-  padding: 32px 0 120px;
-
-  @include respond(tabdesk) {
-    padding: 40px 0;
-  }
+  padding: 40px 0 80px;
 
   @include respond(mobilemini) {
-    padding: 32px 0;
+    padding: 32px 0 52px;
   }
+}
+
+.main-app.inside-page .footer {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .section-heading {
