@@ -64,6 +64,26 @@ window.addEventListener("DOMContentLoaded", () => {
       const headerLogo = document.querySelector(".header__logo");
       const headerButtonLang = document.querySelector(".header__button-lang");
 
+      const ratingBlockFullInfo = document.querySelectorAll(
+        ".rating-block__full-info"
+      );
+
+      ratingBlockFullInfo.forEach(function (btn, index) {
+        btn.addEventListener("click", function () {
+          const containers = document.querySelectorAll(".rating-block__descr");
+          const container = containers[index];
+
+          container.classList.toggle("collapsed");
+          if (!container.classList.contains("collapsed")) {
+            container.classList.add("expanded");
+            btn.textContent = "раскрыть";
+          } else {
+            container.classList.remove("expanded");
+            btn.textContent = "скрыть";
+          }
+        });
+      });
+
       headerToggleBtn.addEventListener("click", () => {
         headerToggleBtn.classList.toggle("active");
         topMenu.classList.toggle("active");

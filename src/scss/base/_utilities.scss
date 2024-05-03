@@ -117,3 +117,10 @@
   transform: translateZ(0);
   transition: all 50ms ease-in-out 0ms;
 }
+
+.block-section {
+  background-color: var(--bg-white);
+  border: 1px solid var(--stroke-primary);
+  border-radius: var(--section-border-radius);
+  padding: 24px;
+}
