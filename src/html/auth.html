@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web app | Inside Market Inspector</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="main-app inside-page">
+          <header class="header">
+            <div class="container">@@include('blocks/header.html')</div>
+          </header>
+          <main class="main-page inside-page">
+            <section class="inside-page__heading">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 d-flex a-center j-beetween mb-2 mb-md-0">
+                    <a href="./index.html" class="inside-page__back d-flex a-center">
+                      <svg class="icon d-block" width="16" height="16">
+                        <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
+                      </svg>
+                      <p class="text-default text-x-small">Назад</p>
+                    </a>
+                    <svg class="icon d-block d-md-none" width="58" height="23">
+                      <use xlink:href="./assets/icons/sprite.svg#uzum-bank"></use>
+                    </svg>
+                  </div>
+                  <div class="col-12 d-flex align-items-start align-items-lg-center j-beetween">
+                    <h2 class="title">
+                      Профиль
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="inside-page__content">
+              <div class="container">
+                <div class="block-section">
+                  <h3 class="title">Auth</h3>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          @@include('blocks/footer.html')
+        </div>
+      </footer>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/magnific-popup.js_1.1.0_jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="./js/fslightbox.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

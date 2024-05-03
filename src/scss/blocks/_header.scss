@@ -182,13 +182,13 @@
   }
 
   .top-menu__item:first-child {
-    display: none;
-
+    border-right: 0 none !important;
+    padding-right: 0 !important;
     @include respond(tabdesk) {
-      display: block;
+      display: none;
 
-      .top-menu__link {
-        height: 22px;
+      &.is-profile {
+        display: block;
       }
     }
     .icon {

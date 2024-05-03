@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web app | Inside Market Inspector</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="main-app inside-page">
+          <header class="header">
+            <div class="container">@@include('blocks/header.html')</div>
+          </header>
+          <main class="main-page inside-page">
+            <section class="inside-page__heading">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 d-flex a-center j-beetween mb-2 mb-md-0">
+                    <a href="./index.html" class="inside-page__back d-flex a-center">
+                      <svg class="icon d-block" width="16" height="16">
+                        <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
+                      </svg>
+                      <p class="text-default text-x-small">Назад</p>
+                    </a>
+                    <svg class="icon d-block d-md-none" width="58" height="23">
+                      <use xlink:href="./assets/icons/sprite.svg#uzum-bank"></use>
+                    </svg>
+                  </div>
+                  <div class="col-12 d-flex align-items-start align-items-lg-center j-beetween">
+                    <h2 class="title">
+                      Профиль
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="inside-page__content">
+              <div class="container">
+                <div class="profile block-section">
+                  <ul class="profile__list">
+                    <li class="profile__item">
+                      <h6 class="title">Пользователь</h6>
+                      <span class="profile__item-text">Фарход Сайдуллаев</span>
+                    </li>
+                    <li class="profile__item">
+                      <h6 class="title">Телефон номер</h6>
+                      <span class="profile__item-text">+998***12</span>
+                    </li>
+                  </ul>
+                  <div class="profile__change">
+                    <h6 class="title">Смена пароля</h6>
+                    <div class="notification-message">
+                      <svg class="icon is-success" width="22" height="22">
+                        <use xlink:href="./assets/icons/sprite.svg#success"></use>
+                      </svg>
+                      <svg class="icon is-error" width="22" height="22">
+                        <use xlink:href="./assets/icons/sprite.svg#rejected"></use>
+                      </svg>
+                      <span>Пароль изменен</span>
+                    </div>
+                    <form class="form-change">
+                      <div class="form-change__item">
+                        <input id="form_field1" name="Full_name" type="text" minlength="2" autocomplete="off"
+                          class="form-change__input" required="required">
+                        <label for="form_field1" class="form-change__item-label">Старый пароль</label>
+                      </div>
+                      <div class="form-change__item">
+                        <input id="form_field2" name="Full_name" type="text" minlength="2" autocomplete="off"
+                          class="form-change__input" required="required">
+                        <label for="form_field2" class="form-change__item-label">Новый пароль</label>
+                      </div>
+                      <div class="form-change__item">
+                        <input id="form_field3" name="Full_name" type="text" minlength="2" autocomplete="off"
+                          class="form-change__input" required="required">
+                        <label for="form_field3" class="form-change__item-label">Повторите новый пароль</label>
+                      </div>
+                      <div class="form-change__item">
+                        <button class="btn x-large">Сохранить</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          @@include('blocks/footer.html')
+        </div>
+      </footer>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/magnific-popup.js_1.1.0_jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="./js/fslightbox.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

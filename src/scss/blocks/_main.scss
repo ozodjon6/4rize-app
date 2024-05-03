@@ -18,7 +18,9 @@ body.active {
 .main-app.inside-page {
   border: 0 none;
   .top-menu .top-menu__item:first-child {
-    display: block;
+    @include respond(tabdesk) {
+      display: none;
+    }
   }
 }
 

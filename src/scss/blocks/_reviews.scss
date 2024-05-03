@@ -47,6 +47,11 @@
   .reviews-heading__top {
     gap: 8px;
 
+    svg:hover {
+      cursor: pointer;
+      color: var(--icon-brand-primary);
+    }
+
     .reviews-heading__top-rating {
       color: var(--text-brand-secondary);
     }

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web app | Inside Market Inspector</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="main-app inside-page">
+          <header class="header">
+            <div class="container"><div class="header__row">
+  <div class="header__logo">
+    <svg class="icon" width="76" height="27">
+      <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+    </svg>
+  </div>
+  <ul class="top-menu">
+    <li class="top-menu__item">
+      <a href="./index.html" class="top-menu__logo">
+        <svg class="icon" width="76" height="27">
+          <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="top-menu__item is-profile">
+      <a href="#" class="top-menu__link text-default text-x-small">Профиль</a>
+    </li>
+    <li class="top-menu__item">
+      <a href="#" class="top-menu__link text-default text-x-small">Каталог сценариев</a>
+    </li>
+    <li class="top-menu__item">
+      <a href="./product-brand.html" class="top-menu__link text-default text-x-small">Продукты (бренды)</a>
+    </li>
+    <li class="top-menu__item is-new">
+      <a href="./market-inspector.html" class="top-menu__link text-default text-x-small">Маркет Инспектор</a>
+      <span class="top-menu__item-text">new</span>
+    </li>
+    <li class="top-menu__item">
+      <a href="https://4rize.com/en/blog/" class="top-menu__link text-default text-x-small">Финтех блог</a>
+    </li>
+  </ul>
+  <div class="header__row-right">
+    <a href="./profile.html" class="header__avatar">
+      <svg class="icon" width="16" height="16">
+        <use xlink:href="./assets/icons/sprite.svg#avatar"></use>
+      </svg>
+    </a>
+    <div class="mobile-lang-hamburger">
+      <a href="" class="header__button-lang d-flex a-center">
+        <img class="icon" id="languageFlag" src="./assets/icons/flag.svg" alt="" />
+        <span class="text" id="languageText">Eng</span>
+      </a>
+      <button class="header__toggle-btn">
+        <div class="icon-mobile">
+          <svg class="icon icon-hamburger" width="16" height="16">
+            <use xlink:href="./assets/icons/sprite.svg#hamburger-icon"></use>
+          </svg>
+          <svg class="icon icon-close" width="11" height="11">
+            <use xlink:href="./assets/icons/sprite.svg#close"></use>
+          </svg>
+        </div>
+        <span class="header__toggle-text">Menu</span>
+      </button>
+    </div>
+  </div>
+</div></div>
+          </header>
+          <main class="main-page inside-page">
+            <section class="inside-page__heading">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 d-flex a-center j-beetween mb-2 mb-md-0">
+                    <a href="./index.html" class="inside-page__back d-flex a-center">
+                      <svg class="icon d-block" width="16" height="16">
+                        <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
+                      </svg>
+                      <p class="text-default text-x-small">Назад</p>
+                    </a>
+                    <svg class="icon d-block d-md-none" width="58" height="23">
+                      <use xlink:href="./assets/icons/sprite.svg#uzum-bank"></use>
+                    </svg>
+                  </div>
+                  <div class="col-12 d-flex align-items-start align-items-lg-center j-beetween">
+                    <h2 class="title">
+                      Профиль
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="inside-page__content">
+              <div class="container">
+                <div class="block-section">
+                  <h3 class="title">Auth</h3>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+	<div class="footer__left">
+		<ul class="footer__list">
+			<li class="footer__item">
+				<a href="" class="footer__link">Перейти на сайт</a>
+			</li>
+			<li class="footer__item">
+				<a href="" class="footer__link">Контакты</a>
+			</li>
+			<li class="footer__item">
+				<a href="" class="footer__link">О проекте</a>
+			</li>
+			<li class="footer__item">
+				<a href="" class="footer__link">Финтех блог</a>
+			</li>
+		</ul>
+		<span class="footer__left-text text-x-small">© 4Rize. Исследовательская платформа для финтех и
+			банков</span>
+	</div>
+	<div class="footer__right">
+		<span class="text-default text-x-small">Мы в соц сетях</span>
+		<ul class="social">
+			<li class="social__item">
+				<a href="" class="social__link">
+					<svg class="icon" width="20" height="20">
+						<use xlink:href="./assets/icons/sprite.svg#instagram"></use>
+					</svg>
+				</a>
+
+			</li>
+			<li class="social__item">
+				<a href="" class="social__link">
+					<svg class="icon" width="20" height="20">
+						<use xlink:href="./assets/icons/sprite.svg#linkedin"></use>
+					</svg>
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="" class="social__link">
+					<svg class="icon" width="20" height="20">
+						<use xlink:href="./assets/icons/sprite.svg#youtube"></use>
+					</svg>
+				</a>
+			</li>
+			<li class="social__item">
+				<a href="" class="social__link">
+					<svg class="icon" width="20" height="20">
+						<use xlink:href="./assets/icons/sprite.svg#telegram"></use>
+					</svg>
+				</a>
+
+			</li>
+		</ul>
+	</div>
+	<div class="footer__mobile">
+		<ul class="mobile-list">
+			<li class="mobile-list__item">
+				<svg class="icon" width="24" height="24">
+					<use xlink:href="./assets/icons/sprite.svg#scheme"></use>
+				</svg>
+				<a href="" class="mobile-list__link">Каталог сценариев</a>
+			</li>
+			<li class="mobile-list__item">
+				<svg class="icon" width="24" height="24">
+					<use xlink:href="./assets/icons/sprite.svg#dashboard"></use>
+				</svg>
+				<a href="" class="mobile-list__link">Продукты (бренды)</a>
+			</li>
+			<li class="mobile-list__item">
+				<svg class="icon" width="24" height="24">
+					<use xlink:href="./assets/icons/sprite.svg#shape"></use>
+				</svg>
+				<a href="" class="mobile-list__link">Маркет Инспектор</a>
+			</li>
+		</ul>
+	</div>
+</div>
+        </div>
+      </footer>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/magnific-popup.js_1.1.0_jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="./js/fslightbox.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
