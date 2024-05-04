@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web app | Inside Market Inspector</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <div id="root">
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="main-app inside-page">
+          <header class="header">
+            <div class="container">@@include('blocks/header.html')</div>
+          </header>
+          <main class="main-page inside-page">
+            <section class="not-found-page">
+              <div class="container">
+                @@include('blocks/not-found.html')
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          @@include('blocks/footer.html')
+        </div>
+      </footer>
+    </div>
+    <div class="overlay"></div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/magnific-popup.js_1.1.0_jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="./js/fslightbox.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

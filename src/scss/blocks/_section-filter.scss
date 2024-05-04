@@ -25,4 +25,9 @@
   display: flex;
   align-items: center;
   gap: 14px;
+
+  @include respond(tabdesk) {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
