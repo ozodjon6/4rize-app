@@ -20,32 +20,41 @@
             <div class="container">@@include('blocks/header.html')</div>
           </header>
           <main class="main-page inside-page">
-            <section class="inside-page__heading">
+            <section class="inside-page__content auth-page">
               <div class="container">
-                <div class="row">
-                  <div class="col-12 d-flex a-center j-beetween mb-2 mb-md-0">
-                    <a href="./index.html" class="inside-page__back d-flex a-center">
-                      <svg class="icon d-block" width="16" height="16">
-                        <use xlink:href="./assets/icons/sprite.svg#arrow-down"></use>
-                      </svg>
-                      <p class="text-default text-x-small">Назад</p>
-                    </a>
-                    <svg class="icon d-block d-md-none" width="58" height="23">
-                      <use xlink:href="./assets/icons/sprite.svg#uzum-bank"></use>
-                    </svg>
-                  </div>
-                  <div class="col-12 d-flex align-items-start align-items-lg-center j-beetween">
-                    <h2 class="title">
-                      Профиль
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="inside-page__content">
-              <div class="container">
+                <a href="./index.html" class="auth-page__logo">
+                  <svg class="icon" width="82" height="30">
+                    <use xlink:href="./assets/icons/sprite.svg#logo"></use>
+                  </svg>
+                </a>
                 <div class="block-section">
-                  <h3 class="title">Auth</h3>
+                  <div class="auth-page__inner">
+                    <h3 class="title">Авторизация</h3>
+                    <div class="notification-message is-error">
+                      <svg class="icon is-success" width="22" height="22">
+                        <use xlink:href="./assets/icons/sprite.svg#success"></use>
+                      </svg>
+                      <svg class="icon is-error" width="22" height="22">
+                        <use xlink:href="./assets/icons/sprite.svg#rejected"></use>
+                      </svg>
+                      <span>Не правильно Email или пароль</span>
+                    </div>
+                    <form class="form-change">
+                      <div class="form-change__item">
+                        <input id="form_field1" name="Full_name" type="text" minlength="2" autocomplete="off"
+                          class="form-change__input" required="required">
+                        <label for="form_field1" class="form-change__item-label">Email</label>
+                      </div>
+                      <div class="form-change__item">
+                        <input id="form_field2" name="Full_name" type="password" minlength="2" autocomplete="off"
+                          class="form-change__input" required="required">
+                        <label for="form_field2" class="form-change__item-label">Введите пароль</label>
+                      </div>
+                      <div class="form-change__item">
+                        <button class="btn x-large">Войти</button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
             </section>
