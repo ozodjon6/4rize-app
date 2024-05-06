@@ -249,21 +249,21 @@ window.addEventListener("DOMContentLoaded", () => {
             });
         }
 
-        for (let i = 0; i < changeTextButtons.length; i++) {
-            changeTextButtons[i].addEventListener("click", (event) => {
-                if (!event.target.parentElement.classList.contains("unlocked")) {
-                    // popupWrap.classList.add("active");
-                    overlayOpen();
-                    document.body.style.overflowX = "hidden";
-                    document.body.style.position = "fixed";
-                    overlay.style.zIndex = "1000";
-                } else {
-                    document.body.style.overflowX = "";
-                    document.body.style.position = "";
-                    overlay.style.zIndex = "";
-                }
-            });
-        }
+        // for (let i = 0; i < changeTextButtons.length; i++) {
+        //   changeTextButtons[i].addEventListener("click", (event) => {
+        //     if (!event.target.parentElement.classList.contains("unlocked")) {
+        //       // popupWrap.classList.add("active");
+        //       overlayOpen();
+        //       document.body.style.overflowX = "hidden";
+        //       document.body.style.position = "fixed";
+        //       overlay.style.zIndex = "1000";
+        //     } else {
+        //       document.body.style.overflowX = "";
+        //       document.body.style.position = "";
+        //       overlay.style.zIndex = "";
+        //     }
+        //   });
+        // }
 
         for (let i = 0; i < insidePageClickBtn.length; i++) {
             insidePageClickBtn[i].addEventListener("click", (event) => {
@@ -537,9 +537,9 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function search() {
-        const searchText = document.querySelector('.filter__search-input').value.toLowerCase();
-        const items = document.querySelectorAll('.inspector-list__item, .product-brand__item');
+    function search(input) {
+        const searchText = input.value.toLowerCase();
+        const items = document.querySelectorAll('.inspector-list__item, .product-brand__item, .filter__item, .filter__item-sidebar');
         const noResultsMessage = document.querySelector(".not-found-page")
 
         let found = false
@@ -562,9 +562,15 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    const searchInput = document.querySelector('.filter__search-input');
-    if (searchInput) {
-        searchInput.addEventListener('input', search);
+    const searchInputs = document.querySelectorAll('.filter__search-input');
+
+    if (searchInputs) {
+        searchInputs.forEach(function(input) {
+            input.addEventListener('input', function() {
+                console.log('input', input)
+                search(input);
+            });
+        });
     }
 
 
