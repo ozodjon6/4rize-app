@@ -185,6 +185,13 @@
   .new-tab {
     display: flex;
     align-items: center;
+
+    &:hover .new-tab__link {
+      color: var(--brand-brand-primary);
+    }
+    &:hover .icon {
+      color: var(--icon-brand-primary);
+    }
     .new-tab__link {
       color: var(--text-primary-brand);
       font-weight: 700;

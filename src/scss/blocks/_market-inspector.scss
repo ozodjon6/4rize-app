@@ -11,6 +11,11 @@
     font-size: 14px;
     padding: 16px 16px 16px 44px;
     flex-shrink: 0;
+    color: var(--text-primary);
+
+    &::placeholder {
+      color: var(--text-secondary);
+    }
   }
 }
 

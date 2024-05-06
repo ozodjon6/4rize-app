@@ -57,6 +57,44 @@ window.addEventListener("DOMContentLoaded", () => {
         "#sidebar-mobile-close"
       );
 
+      // form-change__toggle-eye
+      const togglePasswordButton = document.getElementById('togglePassword');
+      const toggleConfirmPasswordButton = document.getElementById('toggleConfirmPassword');
+      const passwordField = document.getElementById('form_field1');
+      const confirmPasswordField = document.getElementById('form_field2');
+      // Проверяем наличие нужных элементов на странице
+      if (togglePasswordButton && toggleConfirmPasswordButton) {
+
+        togglePasswordButton.addEventListener('click', function (e) {
+          e.preventDefault()
+          toggleFieldType(passwordField, togglePasswordButton);
+        });
+
+        toggleConfirmPasswordButton.addEventListener('click', function (e) {
+          e.preventDefault()
+          toggleFieldType(confirmPasswordField, toggleConfirmPasswordButton);
+        });
+
+        function toggleFieldType(field, button) {
+          const type = field.getAttribute('type') === 'password' ? 'text' : 'password';
+          field.setAttribute('type', type);
+
+          const showIcon = button.querySelector('.show');
+          const hideIcon = button.querySelector('.hide');
+
+          if (type === 'password') {
+            showIcon.style.display = 'inline';
+            hideIcon.style.display = 'none';
+          } else {
+            showIcon.style.display = 'none';
+            hideIcon.style.display = 'inline';
+          }
+        }
+      }
+
+
+
+
       // header toggle btn
 
       const headerToggleBtn = document.querySelector(".header__toggle-btn");
@@ -192,7 +230,7 @@ window.addEventListener("DOMContentLoaded", () => {
       gridItemImgLink[i].addEventListener("click", (event) => {
         event.preventDefault();
         if (event.target.parentElement.classList.contains("locked")) {
-          popupWrap.classList.add("active");
+          // popupWrap.classList.add("active");
           overlayOpen();
           document.body.style.overflowX = "hidden";
           document.body.style.position = "fixed";
@@ -214,7 +252,7 @@ window.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < changeTextButtons.length; i++) {
       changeTextButtons[i].addEventListener("click", (event) => {
         if (!event.target.parentElement.classList.contains("unlocked")) {
-          popupWrap.classList.add("active");
+          // popupWrap.classList.add("active");
           overlayOpen();
           document.body.style.overflowX = "hidden";
           document.body.style.position = "fixed";
@@ -230,7 +268,7 @@ window.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < insidePageClickBtn.length; i++) {
       insidePageClickBtn[i].addEventListener("click", (event) => {
         event.preventDefault();
-        popupWrap.classList.add("active");
+        // popupWrap.classList.add("active");
         overlayOpen();
         if (popupWrap.classList.contains("active")) {
           document.body.style.overflowX = "hidden";
@@ -352,8 +390,7 @@ window.addEventListener("DOMContentLoaded", () => {
     if (customOptions) {
       customOptions.addEventListener("click", function (e) {
         if (e.target.tagName === "LI") {
-          const selectedValue = e.target.getAttribute("data-value");
-          select.value = selectedValue;
+          select.value = e.target.getAttribute("data-value");
           customSelect.innerText = e.target.innerText;
           customOptions.style.display = "none";
         }
@@ -499,6 +536,37 @@ window.addEventListener("DOMContentLoaded", () => {
       console.log("jQuery is not available on this page.");
     }
   }
+
+  function search() {
+    const searchText = document.querySelector('.filter__search-input').value.toLowerCase();
+    const items = document.querySelectorAll('.inspector-list__item, .product-brand__item');
+    const noResultsMessage = document.querySelector(".not-found-page")
+
+    let found = false
+
+    items.forEach(function(item) {
+      const itemText = item.textContent.toLowerCase();
+
+      if (itemText.includes(searchText)) {
+        item.style.display = 'block';
+        found = true
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    if (found) {
+      noResultsMessage.style.display = "none"
+    } else {
+      noResultsMessage.style.display = "block"
+    }
+  }
+
+  const searchInput = document.querySelector('.filter__search-input');
+  if (searchInput) {
+    searchInput.addEventListener('input', search);
+  }
+
 
   clickFilterMore();
   domElemet();

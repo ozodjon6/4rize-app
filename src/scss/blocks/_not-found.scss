@@ -1,5 +1,8 @@
 /** @format */
-
+.not-found-page {
+  margin-top: 32px;
+  display: none;
+}
 .not-found-page.is-visible .not-found {
   display: flex;
 }

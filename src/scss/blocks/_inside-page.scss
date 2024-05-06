@@ -20,14 +20,20 @@
     display: block;
     color: var(--link-primary-colour);
     margin-bottom: 5px;
+    transition: transform .3s ease;
 
     &:hover {
       cursor: pointer;
     }
 
+    &:hover svg {
+      transform: translateX(-4px) rotate(180deg);
+    }
+
     svg {
       transform: rotate(180deg);
       margin-right: 10px;
+      margin-left: 0;
     }
 
     .text-default {

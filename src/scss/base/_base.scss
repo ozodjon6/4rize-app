@@ -147,6 +147,13 @@ body {
     background-color: var(--button-primary-bg-hover);
   }
 
+  &:disabled {
+    background-color: var(--button-disabled-bg);
+    color: var(--text-tertiary);
+    cursor: auto;
+    border: 0 none;
+  }
+
   .text-default {
     color: inherit;
   }

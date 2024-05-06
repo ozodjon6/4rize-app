@@ -18,11 +18,11 @@
         <div class="main-app inside-page">
           <header class="header">
             <div class="container"><div class="header__row">
-  <div class="header__logo">
+  <a href="./index.html" class="header__logo">
     <svg class="icon" width="76" height="27">
       <use xlink:href="./assets/icons/sprite.svg#logo"></use>
     </svg>
-  </div>
+  </a>
   <ul class="top-menu">
     <li class="top-menu__item">
       <a href="./index.html" class="top-menu__logo">
@@ -99,11 +99,27 @@
                         <input id="form_field1" name="Full_name" type="text" minlength="2" autocomplete="off"
                           class="form-change__input" required="required">
                         <label for="form_field1" class="form-change__item-label">Email</label>
+                        <button class="form-change__toggle-eye" id="togglePassword">
+                          <svg class="icon show" width="16" height="16">
+                            <use xlink:href="./assets/icons/sprite.svg#eye-icon"></use>
+                          </svg>
+                          <svg class="icon hide" width="16" height="16">
+                            <use xlink:href="./assets/icons/sprite.svg#eye-hide-icon"></use>
+                          </svg>
+                        </button>
                       </div>
                       <div class="form-change__item">
                         <input id="form_field2" name="Full_name" type="password" minlength="2" autocomplete="off"
                           class="form-change__input" required="required">
                         <label for="form_field2" class="form-change__item-label">Введите пароль</label>
+                        <button class="form-change__toggle-eye" id="toggleConfirmPassword">
+                          <svg class="icon show" width="16" height="16">
+                            <use xlink:href="./assets/icons/sprite.svg#eye-icon"></use>
+                          </svg>
+                          <svg class="icon hide" width="16" height="16">
+                            <use xlink:href="./assets/icons/sprite.svg#eye-hide-icon"></use>
+                          </svg>
+                        </button>
                       </div>
                       <div class="form-change__item">
                         <button class="btn x-large">Войти</button>

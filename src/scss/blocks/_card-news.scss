@@ -161,6 +161,10 @@
     cursor: pointer;
   }
 
+  &:hover svg {
+    transform: translateX(4px);
+  }
+
   span {
     line-height: 160%;
     margin-right: 8px;
