@@ -537,16 +537,17 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    function search(input) {
+    const noResultsMessage = document.querySelector(".not-found-page.first")
+    const noResultsMessageSidebar = document.querySelector(".not-found-page.second")
+
+    function search(input, selectors) {
         const searchText = input.value.toLowerCase();
-        const items = document.querySelectorAll('.inspector-list__item, .product-brand__item, .filter__item, .filter__item-sidebar');
-        const noResultsMessage = document.querySelector(".not-found-page")
+        const items = document.querySelectorAll(`${selectors}`);
 
         let found = false
 
         items.forEach(function(item) {
             const itemText = item.textContent.toLowerCase();
-
             if (itemText.includes(searchText)) {
                 item.style.display = 'block';
                 found = true
@@ -555,22 +556,45 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        if (found) {
-            noResultsMessage.style.display = "none"
-        } else {
-            noResultsMessage.style.display = "block"
-        }
+        // if (found) {
+        //   noResultsMessage.style.display = "none"
+        //   noResultsMessageSidebar.style.display = "none"
+        // } else {
+        //   noResultsMessage.style.display = "block"
+        //   noResultsMessageSidebar.style.display = "block"
+        // }
     }
 
     const searchInputs = document.querySelectorAll('.filter__search-input');
+    const searchInputSidebar = document.querySelector('.filter__search-input-sidebar');
+
+
+    const filterMore = document.querySelector(".filter__more")
+    const filterMoreSidebar = document.querySelector(".filter__more.filter__more_sidebar")
+
 
     if (searchInputs) {
         searchInputs.forEach(function(input) {
             input.addEventListener('input', function() {
-                console.log('input', input)
-                search(input);
+                search(input, '.inspector-list__item, .product-brand__item, .filter__item');
+                if (input.value !== '') {
+                    filterMore.style.display = 'none'
+                } else {
+                    filterMore.style.display = ''
+                }
             });
         });
+    }
+
+    if (searchInputSidebar) {
+        searchInputSidebar.addEventListener('input', function() {
+            search(searchInputSidebar, '.filter__item-sidebar')
+            if (searchInputSidebar.value !== '') {
+                filterMoreSidebar.style.display = 'none'
+            } else {
+                filterMoreSidebar.style.display = ''
+            }
+        })
     }
 
 

@@ -104,6 +104,7 @@
 }
 
 .filter__search-input,
+.filter__search-input-sidebar,
 .filter__search-sidebar{
   background-color: var(--field-bg-normal);
   border: 1px solid var(--field-stroke-primary);
@@ -122,7 +123,8 @@
 }
 
 .filter__list {
-  .filter__item {
+  .filter__item,
+  .filter__item-sidebar {
     margin-bottom: 12px;
     transition: all .3s ease;
 
