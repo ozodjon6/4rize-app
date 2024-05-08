@@ -537,8 +537,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    const noResultsMessage = document.querySelector(".not-found-page.first")
-    const noResultsMessageSidebar = document.querySelector(".not-found-page.second")
+    const noResultsMessage = document.querySelector(".not-found-page")
 
     function search(input, selectors) {
         const searchText = input.value.toLowerCase();
@@ -556,13 +555,11 @@ window.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // if (found) {
-        //   noResultsMessage.style.display = "none"
-        //   noResultsMessageSidebar.style.display = "none"
-        // } else {
-        //   noResultsMessage.style.display = "block"
-        //   noResultsMessageSidebar.style.display = "block"
-        // }
+        if (found) {
+            noResultsMessage.style.display = "none"
+        } else {
+            noResultsMessage.style.display = "block"
+        }
     }
 
     const searchInputs = document.querySelectorAll('.filter__search-input');
@@ -576,12 +573,15 @@ window.addEventListener("DOMContentLoaded", () => {
     if (searchInputs) {
         searchInputs.forEach(function(input) {
             input.addEventListener('input', function() {
-                search(input, '.inspector-list__item, .product-brand__item, .filter__item');
-                if (input.value !== '') {
-                    filterMore.style.display = 'none'
-                } else {
-                    filterMore.style.display = ''
+                search(input, '.inspector-list__item, .product-brand__item, .filter__item_scenarios');
+                if (filterMore) {
+                    if (input.value !== '') {
+                        filterMore.style.display = 'none'
+                    } else {
+                        filterMore.style.display = ''
+                    }
                 }
+
             });
         });
     }

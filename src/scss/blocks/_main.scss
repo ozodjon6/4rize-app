@@ -13,11 +13,20 @@ body.active {
 }
 
 .main-app {
-  width: 100%;
+  width: calc(100% - 250px);
+  margin-left: 230px;
+
+
+  @include respond(tabdesk) {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .main-app.inside-page {
   border: 0 none;
+  width: 100%;
+  margin-left: 0;
   .top-menu .top-menu__item:first-child {
     @include respond(tabdesk) {
       display: none;
